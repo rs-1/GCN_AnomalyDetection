@@ -15,11 +15,59 @@ def parse_index_file(filename):
         index.append(int(line.strip()))
     return index
 
+
+# import scipy.io as sio
+# import os, sys
+# def see_MATLAB_headers:
+#     for f in os.listdir('data/'):
+#         print(f'---------- {f} ----------')
+#         data = sio.loadmat(f'data/{f}')
+#         for k in data:
+#             print(k)
+#         print()
+
+# ---------- acm_test_final.mat ----------
+# ---------- BlogCatalog.mat ----------
+# ---------- Flickr_x.mat ----------
+# __header__
+# __version__
+# __globals__
+# Network
+# Label
+# Attributes
+# Class
+# ---------- Amazon.mat ----------
+# ---------- Disney.mat ----------
+# ---------- Enron.mat ----------
+# __header__
+# __version__
+# __globals__
+# X
+# A
+# gnd
+# ---------- Flickr.mat ----------
+# __header__
+# __version__
+# __globals__
+# Attributes
+# Label
+# Network
+
+def wrapper(f):
+    if f in ('acm_test_final', 'BlogCatalog', 'Flickr_x'):
+        return ('Label', 'Attributes', 'Network')
+    elif f in ('Amazon', 'Disney', 'Enron'):
+        return ('gnd', 'X', 'A')
+    elif f in ('Flickr'):
+        return ('Label', 'Attributes', 'Network')
+
+
 def load_data(data_source):
     data = scipy.io.loadmat("data/{}.mat".format(data_source))
-    labels = data["gnd"]
-    attributes = sp.csr_matrix(data["X"])
-    network = sp.lil_matrix(data["A"])
+    keys = wrapper(data_source)
+    labels = data[keys[0]]
+    attributes = sp.csr_matrix(data[keys[1]])
+    network = sp.lil_matrix(data[keys[2]])
 
     return network, attributes, labels
 
