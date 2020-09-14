@@ -59,9 +59,9 @@ class AnomalyDetectionRunner():
             for index in sorted_errors:
                 f.write("%s\n" % feas['labels'][index][0])
 
-	df = pd.DataFrame({'AD-GCA':reconstruction_errors})
-	df.to_csv('output/{}-scores.csv'.format(self.data_name), index=False, sep=',')
-	
+        df = pd.DataFrame({'AD-GCA':reconstruction_errors})
+        df.to_csv('output/{}-scores.csv'.format(self.data_name), index=False, sep=',')
+    
 
 
 
