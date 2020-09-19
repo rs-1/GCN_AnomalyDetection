@@ -18,17 +18,19 @@ def parse_index_file(filename):
 
 # import scipy.io as sio
 # import os, sys
-# def see_MATLAB_headers:
-#     for f in os.listdir('data/'):
-#         print(f'---------- {f} ----------')
-#         data = sio.loadmat(f'data/{f}')
-#         for k in data:
-#             print(k)
-#         print()
+# def see_MATLAB_headers():
+    # for f in os.listdir('data/'):
+        # if 'Flickr' not in f:
+            # continue
+        # print '---------- {} ----------'.format(f)
+        # data = sio.loadmat('data/{}'.format(f))
+        # for k in data:
+            # print k
+        # print
+# see_MATLAB_headers()
 
 # ---------- acm_test_final.mat ----------
 # ---------- BlogCatalog.mat ----------
-# ---------- Flickr_x.mat ----------
 # __header__
 # __version__
 # __globals__
@@ -45,20 +47,28 @@ def parse_index_file(filename):
 # X
 # A
 # gnd
-# ---------- Flickr.mat ----------
-# __header__
-# __version__
-# __globals__
-# Attributes
-# Label
+# ---------- Flickr1.mat ----------
+# ---------- Flickr2.mat ----------
 # Network
+# __globals__
+# __header__
+# Label
+# Attributes
+# __version__
+# Class
+# ---------- Flickr3.mat ----------
+# Network
+# __globals__
+# __header__
+# Label
+# Attributes
 
 def wrapper(f):
-    if f in ('acm_test_final', 'BlogCatalog', 'Flickr_x'):
+    if f in ('acm_test_final', 'BlogCatalog'):
         return ('Label', 'Attributes', 'Network')
     elif f in ('Amazon', 'Disney', 'Enron'):
         return ('gnd', 'X', 'A')
-    elif f in ('Flickr'):
+    elif f in ('Flickr1', 'Flickr2', 'Flickr3'):
         return ('Label', 'Attributes', 'Network')
 
 
