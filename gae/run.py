@@ -29,12 +29,16 @@ flags.DEFINE_float('alpha', 0.8, 'balance parameter')
 # np.random.seed(seed)
 # tf.set_random_seed(seed)
 
-# data_list = ['acm_test_final', 'BlogCatalog', 'Flickr', 'Amazon', 'Enron', 'Disney']
-data_list = ['Disney', 'Amazon', 'Enron', 'Flickr']
-# data_list = ['BlogCatalog', 'Flickr', 'acm_test_final']
-# data_list = ['Flickr_x', 'Flickr2']
-# data_list = ['acm_test_final']
-data_list = [ 'Flickr1', 'Flickr2', 'Flickr3' ]
+data_list = [
+        'acm_test_final',
+        'Amazon',
+        'BlogCatalog',
+        'Disney',
+        'Enron',
+        'Flickr1',
+        'Flickr2',
+        'Flickr3',
+        ]
 
 for dataname in data_list:
     model = 'gcn_ae'  # 'arga_ae' or 'arga_vae'
