@@ -1,0 +1,225 @@
+---------------------------------------- acm_test_final ----------------------------------------
+{'hidden3': 16, 'hidden2': 32, 'hidden1': 64, 'features': 1, 'learning_rate': 0.005, 'discriminator_out': 0, 'discriminator_learning_rate': 0.005, 'iterations': 300, 'alpha': 0.0, 'weight_decay': 0.0, 'dropout': 0.0}
+0.49965378320533804
+---------------------------------------- Amazon ----------------------------------------
+{'hidden3': 16, 'hidden2': 32, 'hidden1': 64, 'features': 1, 'learning_rate': 0.005, 'discriminator_out': 0, 'discriminator_learning_rate': 0.005, 'iterations': 300, 'alpha': 0.0, 'weight_decay': 0.0, 'dropout': 0.0}
+0.43621531346351494
+---------------------------------------- BlogCatalog ----------------------------------------
+{'hidden3': 16, 'hidden2': 32, 'hidden1': 64, 'features': 1, 'learning_rate': 0.005, 'discriminator_out': 0, 'discriminator_learning_rate': 0.005, 'iterations': 300, 'alpha': 0.0, 'weight_decay': 0.0, 'dropout': 0.0}
+0.7315436241610738
+---------------------------------------- Disney ----------------------------------------
+{'hidden3': 16, 'hidden2': 32, 'hidden1': 64, 'features': 1, 'learning_rate': 0.005, 'discriminator_out': 0, 'discriminator_learning_rate': 0.005, 'iterations': 300, 'alpha': 0.0, 'weight_decay': 0.0, 'dropout': 0.0}
+0.5
+---------------------------------------- Enron ----------------------------------------
+{'hidden3': 16, 'hidden2': 32, 'hidden1': 64, 'features': 1, 'learning_rate': 0.005, 'discriminator_out': 0, 'discriminator_learning_rate': 0.005, 'iterations': 300, 'alpha': 0.0, 'weight_decay': 0.0, 'dropout': 0.0}
+0.5
+---------------------------------------- Flickr2 ----------------------------------------
+{'hidden3': 16, 'hidden2': 32, 'hidden1': 64, 'features': 1, 'learning_rate': 0.005, 'discriminator_out': 0, 'discriminator_learning_rate': 0.005, 'iterations': 300, 'alpha': 0.0, 'weight_decay': 0.0, 'dropout': 0.0}
+0.7315436241610738
+---------------------------------------- acm_test_final ----------------------------------------
+{'hidden3': 16, 'hidden2': 32, 'hidden1': 64, 'features': 1, 'learning_rate': 0.005, 'discriminator_out': 0, 'discriminator_learning_rate': 0.005, 'iterations': 300, 'alpha': 0.1, 'weight_decay': 0.0, 'dropout': 0.0}
+0.8519137399119227
+---------------------------------------- Amazon ----------------------------------------
+{'hidden3': 16, 'hidden2': 32, 'hidden1': 64, 'features': 1, 'learning_rate': 0.005, 'discriminator_out': 0, 'discriminator_learning_rate': 0.005, 'iterations': 300, 'alpha': 0.1, 'weight_decay': 0.0, 'dropout': 0.0}
+0.436292394655704
+---------------------------------------- BlogCatalog ----------------------------------------
+{'hidden3': 16, 'hidden2': 32, 'hidden1': 64, 'features': 1, 'learning_rate': 0.005, 'discriminator_out': 0, 'discriminator_learning_rate': 0.005, 'iterations': 300, 'alpha': 0.1, 'weight_decay': 0.0, 'dropout': 0.0}
+0.851983825749998
+---------------------------------------- Disney ----------------------------------------
+{'hidden3': 16, 'hidden2': 32, 'hidden1': 64, 'features': 1, 'learning_rate': 0.005, 'discriminator_out': 0, 'discriminator_learning_rate': 0.005, 'iterations': 300, 'alpha': 0.1, 'weight_decay': 0.0, 'dropout': 0.0}
+0.5353107344632768
+---------------------------------------- Enron ----------------------------------------
+{'hidden3': 16, 'hidden2': 32, 'hidden1': 64, 'features': 1, 'learning_rate': 0.005, 'discriminator_out': 0, 'discriminator_learning_rate': 0.005, 'iterations': 300, 'alpha': 0.1, 'weight_decay': 0.0, 'dropout': 0.0}
+0.6899319929036074
+---------------------------------------- Flickr1 ----------------------------------------
+{'hidden3': 16, 'hidden2': 32, 'hidden1': 64, 'features': 1, 'learning_rate': 0.005, 'discriminator_out': 0, 'discriminator_learning_rate': 0.005, 'iterations': 300, 'alpha': 0.1, 'weight_decay': 0.0, 'dropout': 0.0}
+0.8108186646075295
+---------------------------------------- Flickr2 ----------------------------------------
+{'hidden3': 16, 'hidden2': 32, 'hidden1': 64, 'features': 1, 'learning_rate': 0.005, 'discriminator_out': 0, 'discriminator_learning_rate': 0.005, 'iterations': 300, 'alpha': 0.1, 'weight_decay': 0.0, 'dropout': 0.0}
+0.8954042977626124
+---------------------------------------- acm_test_final ----------------------------------------
+{'hidden3': 16, 'hidden2': 32, 'hidden1': 64, 'features': 1, 'learning_rate': 0.005, 'discriminator_out': 0, 'discriminator_learning_rate': 0.005, 'iterations': 300, 'alpha': 0.2, 'weight_decay': 0.0, 'dropout': 0.0}
+0.8406185354092727
+---------------------------------------- Amazon ----------------------------------------
+{'hidden3': 16, 'hidden2': 32, 'hidden1': 64, 'features': 1, 'learning_rate': 0.005, 'discriminator_out': 0, 'discriminator_learning_rate': 0.005, 'iterations': 300, 'alpha': 0.2, 'weight_decay': 0.0, 'dropout': 0.0}
+0.436292394655704
+---------------------------------------- BlogCatalog ----------------------------------------
+{'hidden3': 16, 'hidden2': 32, 'hidden1': 64, 'features': 1, 'learning_rate': 0.005, 'discriminator_out': 0, 'discriminator_learning_rate': 0.005, 'iterations': 300, 'alpha': 0.2, 'weight_decay': 0.0, 'dropout': 0.0}
+0.8136443172257681
+---------------------------------------- Disney ----------------------------------------
+{'hidden3': 16, 'hidden2': 32, 'hidden1': 64, 'features': 1, 'learning_rate': 0.005, 'discriminator_out': 0, 'discriminator_learning_rate': 0.005, 'iterations': 300, 'alpha': 0.2, 'weight_decay': 0.0, 'dropout': 0.0}
+0.5353107344632768
+---------------------------------------- Enron ----------------------------------------
+{'hidden3': 16, 'hidden2': 32, 'hidden1': 64, 'features': 1, 'learning_rate': 0.005, 'discriminator_out': 0, 'discriminator_learning_rate': 0.005, 'iterations': 300, 'alpha': 0.2, 'weight_decay': 0.0, 'dropout': 0.0}
+0.690257244234181
+---------------------------------------- Flickr2 ----------------------------------------
+{'hidden3': 16, 'hidden2': 32, 'hidden1': 64, 'features': 1, 'learning_rate': 0.005, 'discriminator_out': 0, 'discriminator_learning_rate': 0.005, 'iterations': 300, 'alpha': 0.2, 'weight_decay': 0.0, 'dropout': 0.0}
+0.5233424224848535
+---------------------------------------- acm_test_final ----------------------------------------
+{'hidden3': 16, 'hidden2': 32, 'hidden1': 64, 'features': 1, 'learning_rate': 0.005, 'discriminator_out': 0, 'discriminator_learning_rate': 0.005, 'iterations': 300, 'alpha': 0.3, 'weight_decay': 0.0, 'dropout': 0.0}
+0.8309755187146547
+---------------------------------------- Amazon ----------------------------------------
+{'hidden3': 16, 'hidden2': 32, 'hidden1': 64, 'features': 1, 'learning_rate': 0.005, 'discriminator_out': 0, 'discriminator_learning_rate': 0.005, 'iterations': 300, 'alpha': 0.3, 'weight_decay': 0.0, 'dropout': 0.0}
+0.6249486125385406
+---------------------------------------- BlogCatalog ----------------------------------------
+{'hidden3': 16, 'hidden2': 32, 'hidden1': 64, 'features': 1, 'learning_rate': 0.005, 'discriminator_out': 0, 'discriminator_learning_rate': 0.005, 'iterations': 300, 'alpha': 0.3, 'weight_decay': 0.0, 'dropout': 0.0}
+0.7996048928339468
+---------------------------------------- Disney ----------------------------------------
+{'hidden3': 16, 'hidden2': 32, 'hidden1': 64, 'features': 1, 'learning_rate': 0.005, 'discriminator_out': 0, 'discriminator_learning_rate': 0.005, 'iterations': 300, 'alpha': 0.3, 'weight_decay': 0.0, 'dropout': 0.0}
+0.48446327683615825
+---------------------------------------- Enron ----------------------------------------
+{'hidden3': 16, 'hidden2': 32, 'hidden1': 64, 'features': 1, 'learning_rate': 0.005, 'discriminator_out': 0, 'discriminator_learning_rate': 0.005, 'iterations': 300, 'alpha': 0.3, 'weight_decay': 0.0, 'dropout': 0.0}
+0.6904937906564164
+---------------------------------------- Flickr1 ----------------------------------------
+{'hidden3': 16, 'hidden2': 32, 'hidden1': 64, 'features': 1, 'learning_rate': 0.005, 'discriminator_out': 0, 'discriminator_learning_rate': 0.005, 'iterations': 300, 'alpha': 0.3, 'weight_decay': 0.0, 'dropout': 0.0}
+0.7655549427171154
+---------------------------------------- Flickr2 ----------------------------------------
+{'hidden3': 16, 'hidden2': 32, 'hidden1': 64, 'features': 1, 'learning_rate': 0.005, 'discriminator_out': 0, 'discriminator_learning_rate': 0.005, 'iterations': 300, 'alpha': 0.3, 'weight_decay': 0.0, 'dropout': 0.0}
+0.5002620663508062
+---------------------------------------- acm_test_final ----------------------------------------
+{'hidden3': 16, 'hidden2': 32, 'hidden1': 64, 'features': 1, 'learning_rate': 0.005, 'discriminator_out': 0, 'discriminator_learning_rate': 0.005, 'iterations': 300, 'alpha': 0.4, 'weight_decay': 0.0, 'dropout': 0.0}
+0.803575127886526
+---------------------------------------- Amazon ----------------------------------------
+{'hidden3': 16, 'hidden2': 32, 'hidden1': 64, 'features': 1, 'learning_rate': 0.005, 'discriminator_out': 0, 'discriminator_learning_rate': 0.005, 'iterations': 300, 'alpha': 0.4, 'weight_decay': 0.0, 'dropout': 0.0}
+0.6228802672147996
+---------------------------------------- BlogCatalog ----------------------------------------
+{'hidden3': 16, 'hidden2': 32, 'hidden1': 64, 'features': 1, 'learning_rate': 0.005, 'discriminator_out': 0, 'discriminator_learning_rate': 0.005, 'iterations': 300, 'alpha': 0.4, 'weight_decay': 0.0, 'dropout': 0.0}
+0.7925050219100523
+---------------------------------------- Disney ----------------------------------------
+{'hidden3': 16, 'hidden2': 32, 'hidden1': 64, 'features': 1, 'learning_rate': 0.005, 'discriminator_out': 0, 'discriminator_learning_rate': 0.005, 'iterations': 300, 'alpha': 0.4, 'weight_decay': 0.0, 'dropout': 0.0}
+0.4731638418079096
+---------------------------------------- Enron ----------------------------------------
+{'hidden3': 16, 'hidden2': 32, 'hidden1': 64, 'features': 1, 'learning_rate': 0.005, 'discriminator_out': 0, 'discriminator_learning_rate': 0.005, 'iterations': 300, 'alpha': 0.4, 'weight_decay': 0.0, 'dropout': 0.0}
+0.7310762862211708
+---------------------------------------- Flickr1 ----------------------------------------
+{'hidden3': 16, 'hidden2': 32, 'hidden1': 64, 'features': 1, 'learning_rate': 0.005, 'discriminator_out': 0, 'discriminator_learning_rate': 0.005, 'iterations': 300, 'alpha': 0.4, 'weight_decay': 0.0, 'dropout': 0.0}
+0.7572764234048253
+---------------------------------------- Flickr2 ----------------------------------------
+{'hidden3': 16, 'hidden2': 32, 'hidden1': 64, 'features': 1, 'learning_rate': 0.005, 'discriminator_out': 0, 'discriminator_learning_rate': 0.005, 'iterations': 300, 'alpha': 0.4, 'weight_decay': 0.0, 'dropout': 0.0}
+0.5277799747411978
+---------------------------------------- acm_test_final ----------------------------------------
+{'hidden3': 16, 'hidden2': 32, 'hidden1': 64, 'features': 1, 'learning_rate': 0.005, 'discriminator_out': 0, 'discriminator_learning_rate': 0.005, 'iterations': 300, 'alpha': 0.5, 'weight_decay': 0.0, 'dropout': 0.0}
+0.8574578929218508
+---------------------------------------- Amazon ----------------------------------------
+{'hidden3': 16, 'hidden2': 32, 'hidden1': 64, 'features': 1, 'learning_rate': 0.005, 'discriminator_out': 0, 'discriminator_learning_rate': 0.005, 'iterations': 300, 'alpha': 0.5, 'weight_decay': 0.0, 'dropout': 0.0}
+0.6240878725590955
+---------------------------------------- BlogCatalog ----------------------------------------
+{'hidden3': 16, 'hidden2': 32, 'hidden1': 64, 'features': 1, 'learning_rate': 0.005, 'discriminator_out': 0, 'discriminator_learning_rate': 0.005, 'iterations': 300, 'alpha': 0.5, 'weight_decay': 0.0, 'dropout': 0.0}
+0.788031548282959
+---------------------------------------- Disney ----------------------------------------
+{'hidden3': 16, 'hidden2': 32, 'hidden1': 64, 'features': 1, 'learning_rate': 0.005, 'discriminator_out': 0, 'discriminator_learning_rate': 0.005, 'iterations': 300, 'alpha': 0.5, 'weight_decay': 0.0, 'dropout': 0.0}
+0.4971751412429378
+---------------------------------------- Enron ----------------------------------------
+{'hidden3': 16, 'hidden2': 32, 'hidden1': 64, 'features': 1, 'learning_rate': 0.005, 'discriminator_out': 0, 'discriminator_learning_rate': 0.005, 'iterations': 300, 'alpha': 0.5, 'weight_decay': 0.0, 'dropout': 0.0}
+0.7310762862211708
+---------------------------------------- Flickr1 ----------------------------------------
+{'hidden3': 16, 'hidden2': 32, 'hidden1': 64, 'features': 1, 'learning_rate': 0.005, 'discriminator_out': 0, 'discriminator_learning_rate': 0.005, 'iterations': 300, 'alpha': 0.5, 'weight_decay': 0.0, 'dropout': 0.0}
+0.7545216445782184
+---------------------------------------- Flickr2 ----------------------------------------
+{'hidden3': 16, 'hidden2': 32, 'hidden1': 64, 'features': 1, 'learning_rate': 0.005, 'discriminator_out': 0, 'discriminator_learning_rate': 0.005, 'iterations': 300, 'alpha': 0.5, 'weight_decay': 0.0, 'dropout': 0.0}
+0.4842294119419399
+---------------------------------------- acm_test_final ----------------------------------------
+{'hidden3': 16, 'hidden2': 32, 'hidden1': 64, 'features': 1, 'learning_rate': 0.005, 'discriminator_out': 0, 'discriminator_learning_rate': 0.005, 'iterations': 300, 'alpha': 0.6, 'weight_decay': 0.0, 'dropout': 0.0}
+0.8424660425430861
+---------------------------------------- Amazon ----------------------------------------
+{'hidden3': 16, 'hidden2': 32, 'hidden1': 64, 'features': 1, 'learning_rate': 0.005, 'discriminator_out': 0, 'discriminator_learning_rate': 0.005, 'iterations': 300, 'alpha': 0.6, 'weight_decay': 0.0, 'dropout': 0.0}
+0.6246145940390544
+---------------------------------------- BlogCatalog ----------------------------------------
+{'hidden3': 16, 'hidden2': 32, 'hidden1': 64, 'features': 1, 'learning_rate': 0.005, 'discriminator_out': 0, 'discriminator_learning_rate': 0.005, 'iterations': 300, 'alpha': 0.6, 'weight_decay': 0.0, 'dropout': 0.0}
+0.7851766643555375
+---------------------------------------- Disney ----------------------------------------
+{'hidden3': 16, 'hidden2': 32, 'hidden1': 64, 'features': 1, 'learning_rate': 0.005, 'discriminator_out': 0, 'discriminator_learning_rate': 0.005, 'iterations': 300, 'alpha': 0.6, 'weight_decay': 0.0, 'dropout': 0.0}
+0.5353107344632768
+---------------------------------------- Enron ----------------------------------------
+{'hidden3': 16, 'hidden2': 32, 'hidden1': 64, 'features': 1, 'learning_rate': 0.005, 'discriminator_out': 0, 'discriminator_learning_rate': 0.005, 'iterations': 300, 'alpha': 0.6, 'weight_decay': 0.0, 'dropout': 0.0}
+0.6872560615020697
+---------------------------------------- Flickr1 ----------------------------------------
+{'hidden3': 16, 'hidden2': 32, 'hidden1': 64, 'features': 1, 'learning_rate': 0.005, 'discriminator_out': 0, 'discriminator_learning_rate': 0.005, 'iterations': 300, 'alpha': 0.6, 'weight_decay': 0.0, 'dropout': 0.0}
+0.7528988133696835
+---------------------------------------- Flickr2 ----------------------------------------
+{'hidden3': 16, 'hidden2': 32, 'hidden1': 64, 'features': 1, 'learning_rate': 0.005, 'discriminator_out': 0, 'discriminator_learning_rate': 0.005, 'iterations': 300, 'alpha': 0.6, 'weight_decay': 0.0, 'dropout': 0.0}
+0.508752545339048
+---------------------------------------- acm_test_final ----------------------------------------
+{'hidden3': 16, 'hidden2': 32, 'hidden1': 64, 'features': 1, 'learning_rate': 0.005, 'discriminator_out': 0, 'discriminator_learning_rate': 0.005, 'iterations': 300, 'alpha': 0.7, 'weight_decay': 0.0, 'dropout': 0.0}
+0.8100328237521774
+---------------------------------------- Amazon ----------------------------------------
+{'hidden3': 16, 'hidden2': 32, 'hidden1': 64, 'features': 1, 'learning_rate': 0.005, 'discriminator_out': 0, 'discriminator_learning_rate': 0.005, 'iterations': 300, 'alpha': 0.7, 'weight_decay': 0.0, 'dropout': 0.0}
+0.6256294964028777
+---------------------------------------- BlogCatalog ----------------------------------------
+{'hidden3': 16, 'hidden2': 32, 'hidden1': 64, 'features': 1, 'learning_rate': 0.005, 'discriminator_out': 0, 'discriminator_learning_rate': 0.005, 'iterations': 300, 'alpha': 0.7, 'weight_decay': 0.0, 'dropout': 0.0}
+0.7829020748093318
+---------------------------------------- Disney ----------------------------------------
+{'hidden3': 16, 'hidden2': 32, 'hidden1': 64, 'features': 1, 'learning_rate': 0.005, 'discriminator_out': 0, 'discriminator_learning_rate': 0.005, 'iterations': 300, 'alpha': 0.7, 'weight_decay': 0.0, 'dropout': 0.0}
+0.5
+---------------------------------------- Enron ----------------------------------------
+{'hidden3': 16, 'hidden2': 32, 'hidden1': 64, 'features': 1, 'learning_rate': 0.005, 'discriminator_out': 0, 'discriminator_learning_rate': 0.005, 'iterations': 300, 'alpha': 0.7, 'weight_decay': 0.0, 'dropout': 0.0}
+0.6900206978119456
+---------------------------------------- Flickr1 ----------------------------------------
+{'hidden3': 16, 'hidden2': 32, 'hidden1': 64, 'features': 1, 'learning_rate': 0.005, 'discriminator_out': 0, 'discriminator_learning_rate': 0.005, 'iterations': 300, 'alpha': 0.7, 'weight_decay': 0.0, 'dropout': 0.0}
+0.7515043257639031
+---------------------------------------- Flickr2 ----------------------------------------
+{'hidden3': 16, 'hidden2': 32, 'hidden1': 64, 'features': 1, 'learning_rate': 0.005, 'discriminator_out': 0, 'discriminator_learning_rate': 0.005, 'iterations': 300, 'alpha': 0.7, 'weight_decay': 0.0, 'dropout': 0.0}
+0.48675372291144103
+---------------------------------------- acm_test_final ----------------------------------------
+{'hidden3': 16, 'hidden2': 32, 'hidden1': 64, 'features': 1, 'learning_rate': 0.005, 'discriminator_out': 0, 'discriminator_learning_rate': 0.005, 'iterations': 300, 'alpha': 0.8, 'weight_decay': 0.0, 'dropout': 0.0}
+0.8110177889536527
+---------------------------------------- Amazon ----------------------------------------
+{'hidden3': 16, 'hidden2': 32, 'hidden1': 64, 'features': 1, 'learning_rate': 0.005, 'discriminator_out': 0, 'discriminator_learning_rate': 0.005, 'iterations': 300, 'alpha': 0.8, 'weight_decay': 0.0, 'dropout': 0.0}
+0.4605087358684481
+---------------------------------------- BlogCatalog ----------------------------------------
+{'hidden3': 16, 'hidden2': 32, 'hidden1': 64, 'features': 1, 'learning_rate': 0.005, 'discriminator_out': 0, 'discriminator_learning_rate': 0.005, 'iterations': 300, 'alpha': 0.8, 'weight_decay': 0.0, 'dropout': 0.0}
+0.7812444334216677
+---------------------------------------- Disney ----------------------------------------
+{'hidden3': 16, 'hidden2': 32, 'hidden1': 64, 'features': 1, 'learning_rate': 0.005, 'discriminator_out': 0, 'discriminator_learning_rate': 0.005, 'iterations': 300, 'alpha': 0.8, 'weight_decay': 0.0, 'dropout': 0.0}
+0.5296610169491525
+---------------------------------------- Enron ----------------------------------------
+{'hidden3': 16, 'hidden2': 32, 'hidden1': 64, 'features': 1, 'learning_rate': 0.005, 'discriminator_out': 0, 'discriminator_learning_rate': 0.005, 'iterations': 300, 'alpha': 0.8, 'weight_decay': 0.0, 'dropout': 0.0}
+0.6903163808397398
+---------------------------------------- Flickr1 ----------------------------------------
+{'hidden3': 16, 'hidden2': 32, 'hidden1': 64, 'features': 1, 'learning_rate': 0.005, 'discriminator_out': 0, 'discriminator_learning_rate': 0.005, 'iterations': 300, 'alpha': 0.8, 'weight_decay': 0.0, 'dropout': 0.0}
+0.7467318026380068
+---------------------------------------- Flickr2 ----------------------------------------
+{'hidden3': 16, 'hidden2': 32, 'hidden1': 64, 'features': 1, 'learning_rate': 0.005, 'discriminator_out': 0, 'discriminator_learning_rate': 0.005, 'iterations': 300, 'alpha': 0.8, 'weight_decay': 0.0, 'dropout': 0.0}
+0.4851879156968642
+---------------------------------------- acm_test_final ----------------------------------------
+{'hidden3': 16, 'hidden2': 32, 'hidden1': 64, 'features': 1, 'learning_rate': 0.005, 'discriminator_out': 0, 'discriminator_learning_rate': 0.005, 'iterations': 300, 'alpha': 0.9, 'weight_decay': 0.0, 'dropout': 0.0}
+0.8418899268492019
+---------------------------------------- Amazon ----------------------------------------
+{'hidden3': 16, 'hidden2': 32, 'hidden1': 64, 'features': 1, 'learning_rate': 0.005, 'discriminator_out': 0, 'discriminator_learning_rate': 0.005, 'iterations': 300, 'alpha': 0.9, 'weight_decay': 0.0, 'dropout': 0.0}
+0.6270811921891059
+---------------------------------------- BlogCatalog ----------------------------------------
+{'hidden3': 16, 'hidden2': 32, 'hidden1': 64, 'features': 1, 'learning_rate': 0.005, 'discriminator_out': 0, 'discriminator_learning_rate': 0.005, 'iterations': 300, 'alpha': 0.9, 'weight_decay': 0.0, 'dropout': 0.0}
+0.7801533840685555
+---------------------------------------- Disney ----------------------------------------
+{'hidden3': 16, 'hidden2': 32, 'hidden1': 64, 'features': 1, 'learning_rate': 0.005, 'discriminator_out': 0, 'discriminator_learning_rate': 0.005, 'iterations': 300, 'alpha': 0.9, 'weight_decay': 0.0, 'dropout': 0.0}
+0.5296610169491526
+---------------------------------------- Enron ----------------------------------------
+{'hidden3': 16, 'hidden2': 32, 'hidden1': 64, 'features': 1, 'learning_rate': 0.005, 'discriminator_out': 0, 'discriminator_learning_rate': 0.005, 'iterations': 300, 'alpha': 0.9, 'weight_decay': 0.0, 'dropout': 0.0}
+0.6903015966883501
+---------------------------------------- Flickr1 ----------------------------------------
+{'hidden3': 16, 'hidden2': 32, 'hidden1': 64, 'features': 1, 'learning_rate': 0.005, 'discriminator_out': 0, 'discriminator_learning_rate': 0.005, 'iterations': 300, 'alpha': 0.9, 'weight_decay': 0.0, 'dropout': 0.0}
+0.7462054619663708
+---------------------------------------- Flickr2 ----------------------------------------
+{'hidden3': 16, 'hidden2': 32, 'hidden1': 64, 'features': 1, 'learning_rate': 0.005, 'discriminator_out': 0, 'discriminator_learning_rate': 0.005, 'iterations': 300, 'alpha': 0.9, 'weight_decay': 0.0, 'dropout': 0.0}
+0.48776165834331386
+---------------------------------------- acm_test_final ----------------------------------------
+{'hidden3': 16, 'hidden2': 32, 'hidden1': 64, 'features': 1, 'learning_rate': 0.005, 'discriminator_out': 0, 'discriminator_learning_rate': 0.005, 'iterations': 300, 'alpha': 1.0, 'weight_decay': 0.0, 'dropout': 0.0}
+0.8335239332754235
+---------------------------------------- Amazon ----------------------------------------
+{'hidden3': 16, 'hidden2': 32, 'hidden1': 64, 'features': 1, 'learning_rate': 0.005, 'discriminator_out': 0, 'discriminator_learning_rate': 0.005, 'iterations': 300, 'alpha': 1.0, 'weight_decay': 0.0, 'dropout': 0.0}
+0.6269527235354573
+---------------------------------------- BlogCatalog ----------------------------------------
+{'hidden3': 16, 'hidden2': 32, 'hidden1': 64, 'features': 1, 'learning_rate': 0.005, 'discriminator_out': 0, 'discriminator_learning_rate': 0.005, 'iterations': 300, 'alpha': 1.0, 'weight_decay': 0.0, 'dropout': 0.0}
+0.779116116426099
+---------------------------------------- Disney ----------------------------------------
+{'hidden3': 16, 'hidden2': 32, 'hidden1': 64, 'features': 1, 'learning_rate': 0.005, 'discriminator_out': 0, 'discriminator_learning_rate': 0.005, 'iterations': 300, 'alpha': 1.0, 'weight_decay': 0.0, 'dropout': 0.0}
+0.49858757062146886
+---------------------------------------- Enron ----------------------------------------
+{'hidden3': 16, 'hidden2': 32, 'hidden1': 64, 'features': 1, 'learning_rate': 0.005, 'discriminator_out': 0, 'discriminator_learning_rate': 0.005, 'iterations': 300, 'alpha': 1.0, 'weight_decay': 0.0, 'dropout': 0.0}
+0.6906564163217032
+---------------------------------------- Flickr1 ----------------------------------------
+{'hidden3': 16, 'hidden2': 32, 'hidden1': 64, 'features': 1, 'learning_rate': 0.005, 'discriminator_out': 0, 'discriminator_learning_rate': 0.005, 'iterations': 300, 'alpha': 1.0, 'weight_decay': 0.0, 'dropout': 0.0}
+0.7447509337031376
+---------------------------------------- Flickr2 ----------------------------------------
+{'hidden3': 16, 'hidden2': 32, 'hidden1': 64, 'features': 1, 'learning_rate': 0.005, 'discriminator_out': 0, 'discriminator_learning_rate': 0.005, 'iterations': 300, 'alpha': 1.0, 'weight_decay': 0.0, 'dropout': 0.0}
+0.4909627909721123
