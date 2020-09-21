@@ -1,0 +1,340 @@
+
+The following have been reloaded with a version change:
+  1) GCC/4.9.2 => GCC/6.2.0
+  2) Python/2.7.9-intel-2016.u3 => Python/2.7.13-intel-2017.u2
+  3) SQLite/3.8.11.1-intel-2016.u3 => SQLite/3.13.0-intel-2017.u2
+  4) Tcl/8.6.5-intel-2016.u3 => Tcl/8.6.5-intel-2017.u2
+  5) Tk/8.6.5-intel-2016.u3 => Tk/8.6.5-intel-2017.u2
+  6) bzip2/1.0.6-intel-2016.u3 => bzip2/1.0.6-intel-2017.u2
+  7) icc/2016.u3-GCC-4.9.2 => icc/2017.u2-GCC-6.2.0
+  8) iccifort/2016.u3-GCC-4.9.2 => iccifort/2017.u2-GCC-6.2.0
+  9) ifort/2016.u3-GCC-4.9.2 => ifort/2017.u2-GCC-6.2.0
+ 10) iimpi/2016.u3-GCC-4.9.2 => iimpi/2017.u2-GCC-6.2.0
+ 11) imkl/11.3.3.210-iimpi-2016.u3-GCC-4.9.2 => imkl/2017.2.174-iimpi-2017.u2-GCC-6.2.0
+ 12) impi/5.1.3.223-iccifort-2016.u3-GCC-4.9.2 => impi/2017.2.174-iccifort-2017.u2-GCC-6.2.0
+ 13) intel/2016.u3 => intel/2017.u2
+ 14) libffi/3.2.1-intel-2016.u3 => libffi/3.2.1-intel-2017.u2
+ 15) libreadline/6.3-intel-2016.u3 => libreadline/6.3-intel-2017.u2
+ 16) ncurses/5.9-intel-2016.u3 => ncurses/6.0-intel-2017.u2
+ 17) zlib/1.2.8-intel-2016.u3 => zlib/1.2.8-intel-2017.u2
+
+I tensorflow/stream_executor/dso_loader.cc:128] successfully opened CUDA library libcublas.so locally
+I tensorflow/stream_executor/dso_loader.cc:128] successfully opened CUDA library libcudnn.so locally
+I tensorflow/stream_executor/dso_loader.cc:128] successfully opened CUDA library libcufft.so locally
+I tensorflow/stream_executor/dso_loader.cc:128] successfully opened CUDA library libcuda.so.1 locally
+I tensorflow/stream_executor/dso_loader.cc:128] successfully opened CUDA library libcurand.so locally
+E tensorflow/stream_executor/cuda/cuda_driver.cc:509] failed call to cuInit: CUDA_ERROR_NO_DEVICE
+I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:158] retrieving CUDA diagnostic information for host: spartan-gpgpu042.hpc.unimelb.edu.au
+I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:165] hostname: spartan-gpgpu042.hpc.unimelb.edu.au
+I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:189] libcuda reported version is: 450.51.5
+I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:363] driver version file contents: """NVRM version: NVIDIA UNIX x86_64 Kernel Module  450.51.05  Sun Jun 28 10:33:40 UTC 2020
+GCC version:  gcc version 4.8.5 20150623 (Red Hat 4.8.5-39) (GCC) 
+"""
+I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:193] kernel reported version is: 450.51.5
+I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:300] kernel version seems to match DSO: 450.51.5
+---------------------------------------- acm_test_final ----------------------------------------
+{'hidden3': 16, 'hidden2': 32, 'hidden1': 64, 'features': 1, 'learning_rate': 0.005, 'discriminator_out': 0, 'discriminator_learning_rate': 0.005, 'iterations': 300, 'alpha': 0.3, 'weight_decay': 0.0, 'dropout': 0.0}
+feature number: 20
+Epoch: 0010 train_loss= 45.55530
+Epoch: 0020 train_loss= 45.51803
+Epoch: 0030 train_loss= 45.42953
+Epoch: 0040 train_loss= 45.25663
+Epoch: 0050 train_loss= 45.19277
+Epoch: 0060 train_loss= 45.18435
+Epoch: 0070 train_loss= 45.17982
+Epoch: 0080 train_loss= 45.17905
+Epoch: 0090 train_loss= 45.17857
+Epoch: 0100 train_loss= 45.17819
+0.8273110839480462
+Epoch: 0110 train_loss= 45.17784
+Epoch: 0120 train_loss= 45.17753
+Epoch: 0130 train_loss= 45.17723
+Epoch: 0140 train_loss= 45.17693
+Epoch: 0150 train_loss= 45.17662
+Epoch: 0160 train_loss= 45.17630
+Epoch: 0170 train_loss= 45.17597
+Epoch: 0180 train_loss= 45.17569
+Epoch: 0190 train_loss= 45.17543
+Epoch: 0200 train_loss= 45.17514
+0.8409975422712916
+Epoch: 0210 train_loss= 45.17479
+Epoch: 0220 train_loss= 45.17453
+Epoch: 0230 train_loss= 45.17427
+Epoch: 0240 train_loss= 45.17408
+Epoch: 0250 train_loss= 45.17390
+Epoch: 0260 train_loss= 45.17374
+Epoch: 0270 train_loss= 45.17359
+Epoch: 0280 train_loss= 45.17345
+Epoch: 0290 train_loss= 45.17332
+Epoch: 0300 train_loss= 45.17320
+0.844252706470054
+
+
+---------------------------------------- Amazon ----------------------------------------
+{'hidden3': 16, 'hidden2': 32, 'hidden1': 64, 'features': 1, 'learning_rate': 0.005, 'discriminator_out': 0, 'discriminator_learning_rate': 0.005, 'iterations': 300, 'alpha': 0.3, 'weight_decay': 0.0, 'dropout': 0.0}
+feature number: 21
+Epoch: 0010 train_loss= 55464.68750
+Epoch: 0020 train_loss= 55445.48438
+Epoch: 0030 train_loss= 55446.75000
+Epoch: 0040 train_loss= 55444.48828
+Epoch: 0050 train_loss= 55441.57812
+Epoch: 0060 train_loss= 55443.08984
+Epoch: 0070 train_loss= 55441.48438
+Epoch: 0080 train_loss= 55442.07812
+Epoch: 0090 train_loss= 55441.53906
+Epoch: 0100 train_loss= 55441.59375
+0.6257836587872558
+Epoch: 0110 train_loss= 55441.58203
+Epoch: 0120 train_loss= 55441.53125
+Epoch: 0130 train_loss= 55441.81641
+Epoch: 0140 train_loss= 55441.55469
+Epoch: 0150 train_loss= 55441.85156
+Epoch: 0160 train_loss= 55441.53906
+Epoch: 0170 train_loss= 55441.80469
+Epoch: 0180 train_loss= 55441.48438
+Epoch: 0190 train_loss= 55441.69922
+Epoch: 0200 train_loss= 55441.53125
+0.6253854059609456
+Epoch: 0210 train_loss= 55441.56641
+Epoch: 0220 train_loss= 55442.09766
+Epoch: 0230 train_loss= 55443.21094
+Epoch: 0240 train_loss= 55442.10547
+Epoch: 0250 train_loss= 55441.63281
+Epoch: 0260 train_loss= 55441.49219
+Epoch: 0270 train_loss= 55441.97656
+Epoch: 0280 train_loss= 55441.50781
+Epoch: 0290 train_loss= 55441.82812
+Epoch: 0300 train_loss= 55442.00391
+0.6267343268242549
+
+
+---------------------------------------- BlogCatalog ----------------------------------------
+{'hidden3': 16, 'hidden2': 32, 'hidden1': 64, 'features': 1, 'learning_rate': 0.005, 'discriminator_out': 0, 'discriminator_learning_rate': 0.005, 'iterations': 300, 'alpha': 0.3, 'weight_decay': 0.0, 'dropout': 0.0}
+feature number: 8189
+Epoch: 0010 train_loss= 25.58218
+Epoch: 0020 train_loss= 25.58204
+Epoch: 0030 train_loss= 25.58171
+Epoch: 0040 train_loss= 25.58171
+Epoch: 0050 train_loss= 25.58172
+Epoch: 0060 train_loss= 25.58234
+Epoch: 0070 train_loss= 25.58234
+Epoch: 0080 train_loss= 25.58234
+Epoch: 0090 train_loss= 25.58234
+Epoch: 0100 train_loss= 25.58234
+0.7994990422059682
+Epoch: 0110 train_loss= 25.58234
+Epoch: 0120 train_loss= 25.58234
+Epoch: 0130 train_loss= 25.58234
+Epoch: 0140 train_loss= 25.58234
+Epoch: 0150 train_loss= 25.58234
+Epoch: 0160 train_loss= 25.58234
+Epoch: 0170 train_loss= 25.58234
+Epoch: 0180 train_loss= 25.58234
+Epoch: 0190 train_loss= 25.58234
+Epoch: 0200 train_loss= 25.58234
+0.7994990422059682
+Epoch: 0210 train_loss= 25.58234
+Epoch: 0220 train_loss= 25.58234
+Epoch: 0230 train_loss= 25.58234
+Epoch: 0240 train_loss= 25.58234
+Epoch: 0250 train_loss= 25.58234
+Epoch: 0260 train_loss= 25.58234
+Epoch: 0270 train_loss= 25.58234
+Epoch: 0280 train_loss= 25.58234
+Epoch: 0290 train_loss= 25.58234
+Epoch: 0300 train_loss= 25.58234
+0.7994990422059682
+
+
+---------------------------------------- Disney ----------------------------------------
+{'hidden3': 16, 'hidden2': 32, 'hidden1': 64, 'features': 1, 'learning_rate': 0.005, 'discriminator_out': 0, 'discriminator_learning_rate': 0.005, 'iterations': 300, 'alpha': 0.3, 'weight_decay': 0.0, 'dropout': 0.0}
+feature number: 28
+Epoch: 0010 train_loss= 3425.03394
+Epoch: 0020 train_loss= 3405.44043
+Epoch: 0030 train_loss= 3380.56616
+Epoch: 0040 train_loss= 3346.62549
+Epoch: 0050 train_loss= 3325.40308
+Epoch: 0060 train_loss= 3296.99805
+Epoch: 0070 train_loss= 3273.46875
+Epoch: 0080 train_loss= 3257.52173
+Epoch: 0090 train_loss= 3312.11108
+Epoch: 0100 train_loss= 3335.22632
+0.5042372881355932
+Epoch: 0110 train_loss= 3269.96338
+Epoch: 0120 train_loss= 3359.09424
+Epoch: 0130 train_loss= 3304.33057
+Epoch: 0140 train_loss= 3281.78296
+Epoch: 0150 train_loss= 3258.18726
+Epoch: 0160 train_loss= 3230.30908
+Epoch: 0170 train_loss= 3216.72192
+Epoch: 0180 train_loss= 3199.91162
+Epoch: 0190 train_loss= 3194.10132
+Epoch: 0200 train_loss= 3212.54810
+0.5084745762711864
+Epoch: 0210 train_loss= 3212.46313
+Epoch: 0220 train_loss= 3174.47876
+Epoch: 0230 train_loss= 3173.11304
+Epoch: 0240 train_loss= 3155.78418
+Epoch: 0250 train_loss= 3190.53442
+Epoch: 0260 train_loss= 3147.26465
+Epoch: 0270 train_loss= 3216.95776
+Epoch: 0280 train_loss= 3166.70483
+Epoch: 0290 train_loss= 3203.17383
+Epoch: 0300 train_loss= 3172.83374
+0.5141242937853108
+
+
+---------------------------------------- Enron ----------------------------------------
+{'hidden3': 16, 'hidden2': 32, 'hidden1': 64, 'features': 1, 'learning_rate': 0.005, 'discriminator_out': 0, 'discriminator_learning_rate': 0.005, 'iterations': 300, 'alpha': 0.3, 'weight_decay': 0.0, 'dropout': 0.0}
+feature number: 18
+Epoch: 0010 train_loss= 340318912.00000
+Epoch: 0020 train_loss= 340265952.00000
+Epoch: 0030 train_loss= 340262176.00000
+Epoch: 0040 train_loss= 340262016.00000
+Epoch: 0050 train_loss= 340262944.00000
+Epoch: 0060 train_loss= 340261952.00000
+Epoch: 0070 train_loss= 340262336.00000
+Epoch: 0080 train_loss= 340262816.00000
+Epoch: 0090 train_loss= 340261952.00000
+Epoch: 0100 train_loss= 340262048.00000
+0.6900946185688942
+Epoch: 0110 train_loss= 340261760.00000
+Epoch: 0120 train_loss= 340261664.00000
+Epoch: 0130 train_loss= 340262048.00000
+Epoch: 0140 train_loss= 340261632.00000
+Epoch: 0150 train_loss= 340261408.00000
+Epoch: 0160 train_loss= 340261632.00000
+Epoch: 0170 train_loss= 340261280.00000
+Epoch: 0180 train_loss= 340260992.00000
+Epoch: 0190 train_loss= 340260832.00000
+Epoch: 0200 train_loss= 340259872.00000
+0.6902424600827912
+Epoch: 0210 train_loss= 340262016.00000
+Epoch: 0220 train_loss= 340260640.00000
+Epoch: 0230 train_loss= 340263104.00000
+Epoch: 0240 train_loss= 340262592.00000
+Epoch: 0250 train_loss= 340260704.00000
+Epoch: 0260 train_loss= 340264928.00000
+Epoch: 0270 train_loss= 340260672.00000
+Epoch: 0280 train_loss= 340260384.00000
+Epoch: 0290 train_loss= 340260768.00000
+Epoch: 0300 train_loss= 340260288.00000
+0.6903903015966883
+
+
+---------------------------------------- Flickr1 ----------------------------------------
+{'hidden3': 16, 'hidden2': 32, 'hidden1': 64, 'features': 1, 'learning_rate': 0.005, 'discriminator_out': 0, 'discriminator_learning_rate': 0.005, 'iterations': 300, 'alpha': 0.3, 'weight_decay': 0.0, 'dropout': 0.0}
+feature number: 12047
+Epoch: 0010 train_loss= 30.81630
+Epoch: 0020 train_loss= 30.81623
+Epoch: 0030 train_loss= 30.81619
+Epoch: 0040 train_loss= 30.81618
+Epoch: 0050 train_loss= 30.81619
+Epoch: 0060 train_loss= 30.81618
+Epoch: 0070 train_loss= 30.81618
+Epoch: 0080 train_loss= 30.81618
+Epoch: 0090 train_loss= 30.81620
+Epoch: 0100 train_loss= 30.81617
+0.7656305844902848
+Epoch: 0110 train_loss= 30.81617
+Epoch: 0120 train_loss= 30.81617
+Epoch: 0130 train_loss= 30.81617
+Epoch: 0140 train_loss= 30.81616
+Epoch: 0150 train_loss= 30.81616
+Epoch: 0160 train_loss= 30.81616
+Epoch: 0170 train_loss= 30.81616
+Epoch: 0180 train_loss= 30.81615
+Epoch: Traceback (most recent call last):
+  File "run.py", line 60, in <module>
+    runner.erun()
+  File "/data/gpfs/projects/punim1343/repo/GCN_AnomalyDetection/gae/anomaly_detection.py", line 55, in erun
+    auc = roc_auc_score(y_true, reconstruction_errors)
+  File "/usr/local/easybuild/software/scikit-learn/0.18-intel-2016.u3-Python-2.7.9/lib/python2.7/site-packages/sklearn/metrics/ranking.py", line 260, in roc_auc_score
+    sample_weight=sample_weight)
+  File "/usr/local/easybuild/software/scikit-learn/0.18-intel-2016.u3-Python-2.7.9/lib/python2.7/site-packages/sklearn/metrics/base.py", line 84, in _average_binary_score
+    return binary_metric(y_true, y_score, sample_weight=sample_weight)
+  File "/usr/local/easybuild/software/scikit-learn/0.18-intel-2016.u3-Python-2.7.9/lib/python2.7/site-packages/sklearn/metrics/ranking.py", line 255, in _binary_roc_auc_score
+    sample_weight=sample_weight)
+  File "/usr/local/easybuild/software/scikit-learn/0.18-intel-2016.u3-Python-2.7.9/lib/python2.7/site-packages/sklearn/metrics/ranking.py", line 505, in roc_curve
+    y_true, y_score, pos_label=pos_label, sample_weight=sample_weight)
+  File "/usr/local/easybuild/software/scikit-learn/0.18-intel-2016.u3-Python-2.7.9/lib/python2.7/site-packages/sklearn/metrics/ranking.py", line 301, in _binary_clf_curve
+    assert_all_finite(y_score)
+  File "/usr/local/easybuild/software/scikit-learn/0.18-intel-2016.u3-Python-2.7.9/lib/python2.7/site-packages/sklearn/utils/validation.py", line 65, in assert_all_finite
+    _assert_all_finite(X.data if sp.issparse(X) else X)
+  File "/usr/local/easybuild/software/scikit-learn/0.18-intel-2016.u3-Python-2.7.9/lib/python2.7/site-packages/sklearn/utils/validation.py", line 58, in _assert_all_finite
+    " or a value too large for %r." % X.dtype)
+ValueError: Input contains NaN, infinity or a value too large for dtype('float32').
+Traceback (most recent call last):
+  File "run.py", line 60, in <module>
+    runner.erun()
+  File "/data/gpfs/projects/punim1343/repo/GCN_AnomalyDetection/gae/anomaly_detection.py", line 55, in erun
+    auc = roc_auc_score(y_true, reconstruction_errors)
+  File "/usr/local/easybuild/software/scikit-learn/0.18-intel-2016.u3-Python-2.7.9/lib/python2.7/site-packages/sklearn/metrics/ranking.py", line 260, in roc_auc_score
+    sample_weight=sample_weight)
+  File "/usr/local/easybuild/software/scikit-learn/0.18-intel-2016.u3-Python-2.7.9/lib/python2.7/site-packages/sklearn/metrics/base.py", line 81, in _average_binary_score
+    raise ValueError("{0} format is not supported".format(y_type))
+ValueError: multiclass format is not supported
+0190 train_loss= 30.81631
+Epoch: 0200 train_loss= 30.81631
+0.7654780402477268
+Epoch: 0210 train_loss= 30.81631
+Epoch: 0220 train_loss= 30.81632
+Epoch: 0230 train_loss= 30.81633
+Epoch: 0240 train_loss= nan
+Epoch: 0250 train_loss= nan
+Epoch: 0260 train_loss= nan
+Epoch: 0270 train_loss= nan
+Epoch: 0280 train_loss= nan
+Epoch: 0290 train_loss= nan
+Epoch: 0300 train_loss= nan
+---------------------------------------- Flickr2 ----------------------------------------
+{'hidden3': 16, 'hidden2': 32, 'hidden1': 64, 'features': 1, 'learning_rate': 0.005, 'discriminator_out': 0, 'discriminator_learning_rate': 0.005, 'iterations': 300, 'alpha': 0.3, 'weight_decay': 0.0, 'dropout': 0.0}
+feature number: 20
+Epoch: 0010 train_loss= 30.97058
+Epoch: 0020 train_loss= 30.96654
+Epoch: 0030 train_loss= 30.93235
+Epoch: 0040 train_loss= 30.83022
+Epoch: 0050 train_loss= 30.79684
+Epoch: 0060 train_loss= 30.79286
+Epoch: 0070 train_loss= 30.79251
+Epoch: 0080 train_loss= 30.79206
+Epoch: 0090 train_loss= 30.79205
+Epoch: 0100 train_loss= 30.79200
+0.518763793791758
+Epoch: 0110 train_loss= 30.79199
+Epoch: 0120 train_loss= 30.79199
+Epoch: 0130 train_loss= 30.79198
+Epoch: 0140 train_loss= 30.79198
+Epoch: 0150 train_loss= 30.79198
+Epoch: 0160 train_loss= 30.79198
+Epoch: 0170 train_loss= 30.79198
+Epoch: 0180 train_loss= 30.79198
+Epoch: 0190 train_loss= 30.79198
+Epoch: 0200 train_loss= 30.79198
+0.5189040855987165
+Epoch: 0210 train_loss= 30.79198
+Epoch: 0220 train_loss= 30.79198
+Epoch: 0230 train_loss= 30.79198
+Epoch: 0240 train_loss= 30.79198
+Epoch: 0250 train_loss= 30.79198
+Epoch: 0260 train_loss= 30.79198
+Epoch: 0270 train_loss= 30.79198
+Epoch: 0280 train_loss= 30.79198
+Epoch: 0290 train_loss= 30.79198
+Epoch: 0300 train_loss= 30.79439
+0.5217472701160248
+
+
+---------------------------------------- Flickr3 ----------------------------------------
+{'hidden3': 16, 'hidden2': 32, 'hidden1': 64, 'features': 1, 'learning_rate': 0.005, 'discriminator_out': 0, 'discriminator_learning_rate': 0.005, 'iterations': 300, 'alpha': 0.3, 'weight_decay': 0.0, 'dropout': 0.0}
+feature number: 12047
+Epoch: 0010 train_loss= 32.57788
+Epoch: 0020 train_loss= nan
+Epoch: 0030 train_loss= nan
+Epoch: 0040 train_loss= nan
+Epoch: 0050 train_loss= nan
+Epoch: 0060 train_loss= nan
+Epoch: 0070 train_loss= nan
+Epoch: 0080 train_loss= nan
+Epoch: 0090 train_loss= nan
+Epoch: 0100 train_loss= nan
