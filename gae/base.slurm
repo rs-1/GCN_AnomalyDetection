@@ -21,10 +21,10 @@
 
 # Maximum number of tasks/CPU cores used by the job:
 #SBATCH --ntasks=1
-#SBATCH --cpus-per-task=4
+#SBATCH --cpus-per-task=1
 
 # The maximum running time of the job in days-hours:mins:sec
-#SBATCH --time=1-0:00:00
+#SBATCH --time=0-9:00:00
 
 # Custom output name
 #SBATCH --output=./output/%j-slurm.out
@@ -43,4 +43,4 @@ module load scikit-learn/0.18-intel-2016.u3-Python-2.7.9
 module load Tensorflow/0.12.1-intel-2017.u2-Python-2.7.13-GPU
 
 # The job command(s):
-python2 run.py 1.0
+python2 run.py

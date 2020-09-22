@@ -1,8 +1,6 @@
 from __future__ import division
 from __future__ import print_function
 import os
-# Train on CPU (hide GPU) due to memory constraints
-os.environ['CUDA_VISIBLE_DEVICES'] = ""
 
 import time
 import tensorflow as tf
@@ -12,6 +10,14 @@ from input_data import format_data
 from sklearn.metrics import roc_auc_score, average_precision_score
 import pandas as pd
 
+
+# NOTE: can still use GPU for acm_test_final!
+# May need to run CPU-only (ignore GPU) or out-of-memory error
+USE_GPU = True
+if not USE_GPU:
+    os.environ['CUDA_VISIBLE_DEVICES'] = ""
+
+
 # Settings
 flags = tf.app.flags
 FLAGS = flags.FLAGS
@@ -20,6 +26,7 @@ FLAGS = flags.FLAGS
 class AnomalyDetectionRunner():
     def __init__(self, settings):
         self.data_name = settings['data_name']
+        self.alpha = settings['alpha']
         self.iteration = settings['iterations']
         self.model = settings['model']
 
@@ -28,7 +35,7 @@ class AnomalyDetectionRunner():
         model_str = self.model
         # load data
         feas = format_data(self.data_name)
-        print("feature number: {}".format(feas['num_features']))
+        #print("feature number: {}".format(feas['num_features']))
 
         # Define placeholders
         placeholders = get_placeholder()
@@ -37,7 +44,7 @@ class AnomalyDetectionRunner():
         gcn_model = get_model(model_str, placeholders, feas['num_features'], feas['num_nodes'], feas['features_nonzero'])
 
         # Optimizer
-        opt = get_optimizer(model_str, gcn_model, placeholders, feas['num_nodes'], FLAGS.alpha)
+        opt = get_optimizer(model_str, gcn_model, placeholders, feas['num_nodes'], self.alpha)
 
         # Initialize session
         sess = tf.Session()
@@ -47,6 +54,8 @@ class AnomalyDetectionRunner():
         for epoch in range(1, self.iteration+1):
 
             reconstruction_errors, reconstruction_loss = update(gcn_model, opt, sess, feas['adj_norm'], feas['adj_label'], feas['features'], placeholders, feas['adj'])
+
+            '''
             if epoch % 10 == 0:
                 print("Epoch:", '%04d' % (epoch), "train_loss=", "{:.5f}".format(reconstruction_loss))
 
@@ -54,9 +63,13 @@ class AnomalyDetectionRunner():
                 y_true = [label[0] for label in feas['labels']]
                 auc = roc_auc_score(y_true, reconstruction_errors)
                 print(auc)
+            '''
 
-        timestamp = int(time.time())
+        y_true = [label[0] for label in feas['labels']]
+        auc = roc_auc_score(y_true, reconstruction_errors)
+        return (self.data_name, self.alpha, auc)
 
+        '''
         sorted_errors = np.argsort(-reconstruction_errors, axis=0)
         with open('output/{}-{}-ranking.txt'.format(timestamp, self.data_name), 'w') as f:
             for index in sorted_errors:
@@ -64,3 +77,4 @@ class AnomalyDetectionRunner():
 
         df = pd.DataFrame({'AD-GCA':reconstruction_errors})
         df.to_csv('output/{}-{}-scores.csv'.format(timestamp, self.data_name), index=False, sep=',')
+        '''
