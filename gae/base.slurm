@@ -2,11 +2,13 @@
 # Created by the University of Melbourne job script generator for SLURM
 # Mon Sep 14 2020 16:39:51 GMT+1000 (Australian Eastern Standard Time)
 
-# Partition for the job:
-#SBATCH --partition=gpgpu
+## Use GPU
+##SBATCH --partition=gpgpu
+##SBATCH --gres=gpu:1
 
-# Number of GPUs requested per node:
-#SBATCH --gres=gpu:1
+# CPU-only
+#SBATCH --qos=normal
+#SBATCH --partition=physical
 
 #SBATCH --mem=110G
 

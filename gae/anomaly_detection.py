@@ -67,7 +67,7 @@ class AnomalyDetectionRunner():
 
         y_true = [label[0] for label in feas['labels']]
         auc = roc_auc_score(y_true, reconstruction_errors)
-        return (self.data_name, self.alpha, auc)
+        return [self.data_name, self.alpha, auc]
 
         '''
         sorted_errors = np.argsort(-reconstruction_errors, axis=0)

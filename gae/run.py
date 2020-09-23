@@ -1,3 +1,4 @@
+import os
 import csv
 import time
 import itertools
@@ -6,6 +7,9 @@ import sys
 import tensorflow as tf
 import numpy as np
 from anomaly_detection import AnomalyDetectionRunner
+
+
+SLURM_JOB_ID = os.getenv('SLURM_JOB_ID', '')
 
 
 flags = tf.app.flags
@@ -32,44 +36,49 @@ flags.DEFINE_integer('iterations', 100, 'number of iterations.')
 # np.random.seed(seed)
 # tf.set_random_seed(seed)
 
-data_list = [
-        'acm_test_final',
-        #'BlogCatalog',
-        #'Flickr1',
-        ]
-alphas = [i/10.0 for i in range(0,10+1)]
 model = 'gcn_ae'  # 'arga_ae' or 'arga_vae'
 task = 'anomaly_detection'
+data_list = [
+        'acm_test_final',
+        'BlogCatalog',
+        'Flickr1',
+        ]
+alphas = [i/10.0 for i in range(0,10+1)]
+NUM_TO_AVG = 10
 
-def get_aucs_per_dataname_per_alpha(dataname, alpha, num):
-    settings = {'data_name': dataname, 'alpha': alpha, 'iterations' : FLAGS.iterations, 'model' : model}
-    results = []
-    for _ in range(num):
-        runner = AnomalyDetectionRunner(settings)
-        exc_info = None
-        try:
-            r = runner.erun()
-            results.append(r)
-        except Exception as e:
-            exc_info = sys.exc_info()
-        finally:
-            if exc_info:
-                traceback.print_exception(*exc_info)
-                del exc_info
-    return results
+#TODO remove training wheels
+data_list = ['acm_test_final']
+alphas = [0.0, 0.5]
+NUM_TO_AVG = 2
+
+def T(start):
+    return int(time.time() - start)
 
 def get_aucs(data_list):
-    T = time.time
-    num = 10
-    for dataname, alpha in itertools.product(data_list, alphas):
-        try:
-            results = get_aucs_per_dataname_per_alpha(dataname, alpha, num)
-        except Exception as e:
-            results = []
-        finally:
-            with open('output/{}-{}-{}.csv'.format(int(T()), dataname, alpha), 'wb') as f:
-                out = csv.writer(f)
-                out.writerows(results)
+
+    START = time.time()
+    FILE = 'output/{}-{}-epochs-{}-avg.csv'.format(SLURM_JOB_ID, FLAGS.iterations, NUM_TO_AVG)
+
+    settings = {'data_name': None, 'alpha': None, 'iterations' : FLAGS.iterations, 'model' : model}
+
+    with open(FILE, 'a') as f:
+        w = csv.writer(f)
+        for dataname, alpha in itertools.product(data_list, alphas):
+            settings['data_name'] = dataname
+            settings['alpha'] = alpha
+            for _ in range(NUM_TO_AVG):
+                runner = AnomalyDetectionRunner(settings)
+                exc_info = None
+                try:
+                    r = runner.erun()
+                    r.append(T(START))
+                    w.writerow(r)
+                except Exception as e:
+                    exc_info = sys.exc_info()
+                finally:
+                    if exc_info:
+                        traceback.print_exception(*exc_info)
+                        del exc_info
 
 # TODO
 # reduce iterations/epochs to 100, not much change anyway
