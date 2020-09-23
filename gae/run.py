@@ -46,11 +46,6 @@ data_list = [
 alphas = [i/10.0 for i in range(0,10+1)]
 NUM_TO_AVG = 10
 
-#TODO remove training wheels
-data_list = ['BlogCatalog']
-alphas = [0.0, 0.5]
-NUM_TO_AVG = 2
-
 def T(start):
     return int(time.time() - start)
 
