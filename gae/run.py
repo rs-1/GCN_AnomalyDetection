@@ -44,7 +44,7 @@ data_list = [
         'Flickr1',
         ]
 alphas = [i/10.0 for i in range(0,10+1)]
-NUM_TO_AVG = 10
+NUM_TO_AVG = 1
 
 def T(start):
     return int(time.time() - start)
