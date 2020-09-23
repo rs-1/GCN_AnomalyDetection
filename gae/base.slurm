@@ -6,9 +6,10 @@
 ##SBATCH --partition=gpgpu
 ##SBATCH --gres=gpu:1
 
-# CPU-only
+# CPU-only (note: constrain to faster Intel(R) Xeon(R) Gold 6254 CPU @ 3.10GHz)
 #SBATCH --qos=normal
 #SBATCH --partition=physical
+#SBATCH --constraint=physg5
 
 #SBATCH --mem=110G
 
@@ -26,7 +27,7 @@
 #SBATCH --cpus-per-task=1
 
 # The maximum running time of the job in days-hours:mins:sec
-#SBATCH --time=0-9:00:00
+#SBATCH --time=1-0:00:00
 
 # Custom output name
 #SBATCH --output=./output/%j-slurm.out

@@ -47,7 +47,7 @@ alphas = [i/10.0 for i in range(0,10+1)]
 NUM_TO_AVG = 10
 
 #TODO remove training wheels
-data_list = ['acm_test_final']
+data_list = ['BlogCatalog']
 alphas = [0.0, 0.5]
 NUM_TO_AVG = 2
 

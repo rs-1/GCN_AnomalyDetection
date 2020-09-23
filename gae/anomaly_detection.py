@@ -13,7 +13,7 @@ import pandas as pd
 
 # NOTE: can still use GPU for acm_test_final!
 # May need to run CPU-only (ignore GPU) or out-of-memory error
-USE_GPU = True
+USE_GPU = False
 if not USE_GPU:
     os.environ['CUDA_VISIBLE_DEVICES'] = ""
 
