@@ -68,6 +68,7 @@ def get_aucs(data_list):
                     r = runner.erun()
                     r.append(T(START))
                     w.writerow(r)
+                    f.flush()
                 except Exception as e:
                     exc_info = sys.exc_info()
                 finally:
