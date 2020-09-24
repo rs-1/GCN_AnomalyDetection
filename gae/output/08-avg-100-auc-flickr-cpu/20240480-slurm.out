@@ -1,0 +1,92 @@
+
+The following have been reloaded with a version change:
+  1) GCC/4.9.2 => GCC/6.2.0
+  2) Python/2.7.9-intel-2016.u3 => Python/2.7.13-intel-2017.u2
+  3) SQLite/3.8.11.1-intel-2016.u3 => SQLite/3.13.0-intel-2017.u2
+  4) Tcl/8.6.5-intel-2016.u3 => Tcl/8.6.5-intel-2017.u2
+  5) Tk/8.6.5-intel-2016.u3 => Tk/8.6.5-intel-2017.u2
+  6) bzip2/1.0.6-intel-2016.u3 => bzip2/1.0.6-intel-2017.u2
+  7) icc/2016.u3-GCC-4.9.2 => icc/2017.u2-GCC-6.2.0
+  8) iccifort/2016.u3-GCC-4.9.2 => iccifort/2017.u2-GCC-6.2.0
+  9) ifort/2016.u3-GCC-4.9.2 => ifort/2017.u2-GCC-6.2.0
+ 10) iimpi/2016.u3-GCC-4.9.2 => iimpi/2017.u2-GCC-6.2.0
+ 11) imkl/11.3.3.210-iimpi-2016.u3-GCC-4.9.2 => imkl/2017.2.174-iimpi-2017.u2-GCC-6.2.0
+ 12) impi/5.1.3.223-iccifort-2016.u3-GCC-4.9.2 => impi/2017.2.174-iccifort-2017.u2-GCC-6.2.0
+ 13) intel/2016.u3 => intel/2017.u2
+ 14) libffi/3.2.1-intel-2016.u3 => libffi/3.2.1-intel-2017.u2
+ 15) libreadline/6.3-intel-2016.u3 => libreadline/6.3-intel-2017.u2
+ 16) ncurses/5.9-intel-2016.u3 => ncurses/6.0-intel-2017.u2
+ 17) zlib/1.2.8-intel-2016.u3 => zlib/1.2.8-intel-2017.u2
+
+I tensorflow/stream_executor/dso_loader.cc:128] successfully opened CUDA library libcublas.so locally
+I tensorflow/stream_executor/dso_loader.cc:128] successfully opened CUDA library libcudnn.so locally
+I tensorflow/stream_executor/dso_loader.cc:128] successfully opened CUDA library libcufft.so locally
+I tensorflow/stream_executor/dso_loader.cc:119] Couldn't open CUDA library libcuda.so.1. LD_LIBRARY_PATH: /usr/local/easybuild/software/cuDNN/7.0.3-intel-2017.u2-CUDA-8.0.44/lib64:/usr/local/easybuild/software/CUDA/8.0.44-intel-2017.u2/lib64:/usr/local/easybuild/software/Python/2.7.13-intel-2017.u2/lib:/usr/local/easybuild/software/libffi/3.2.1-intel-2017.u2/lib:/usr/local/easybuild/software/Tk/8.6.5-intel-2017.u2/lib:/usr/local/easybuild/software/Tcl/8.6.5-intel-2017.u2/lib:/usr/local/easybuild/software/zlib/1.2.8-intel-2017.u2/lib:/usr/local/easybuild/software/SQLite/3.13.0-intel-2017.u2/lib:/usr/local/easybuild/software/libreadline/6.3-intel-2017.u2/lib:/usr/local/easybuild/software/ncurses/6.0-intel-2017.u2/lib:/usr/local/easybuild/software/bzip2/1.0.6-intel-2017.u2/lib:/usr/local/easybuild/software/imkl/2017.2.174-iimpi-2017.u2-GCC-6.2.0/mkl/lib/intel64:/usr/local/easybuild/software/imkl/2017.2.174-iimpi-2017.u2-GCC-6.2.0/lib/intel64:/usr/local/easybuild/software/impi/2017.2.174-iccifort-2017.u2-GCC-6.2.0/lib64:/usr/local/easybuild/software/ifort/2017.u2-GCC-6.2.0/lib/intel64:/usr/local/easybuild/software/ifort/2017.u2-GCC-6.2.0/daal/lib/intel64_lin:/usr/local/easybuild/software/ifort/2017.u2-GCC-6.2.0/debugger_2017/libipt/intel64/lib:/usr/local/easybuild/software/ifort/2017.u2-GCC-6.2.0/tbb/lib/intel64/gcc4.4:/usr/local/easybuild/software/ifort/2017.u2-GCC-6.2.0/mkl/lib/intel64:/usr/local/easybuild/software/ifort/2017.u2-GCC-6.2.0/ipp/lib/intel64:/usr/local/easybuild/software/ifort/2017.u2-GCC-6.2.0/lib:/usr/local/easybuild/software/icc/2017.u2-GCC-6.2.0/lib/intel64:/usr/local/easybuild/software/icc/2017.u2-GCC-6.2.0/daal/lib/intel64_lin:/usr/local/easybuild/software/icc/2017.u2-GCC-6.2.0/debugger_2017/libipt/intel64/lib:/usr/local/easybuild/software/icc/2017.u2-GCC-6.2.0/tbb/lib/intel64/gcc4.4:/usr/local/easybuild/software/icc/2017.u2-GCC-6.2.0/mkl/lib/intel64:/usr/local/easybuild/software/icc/2017.u2-GCC-6.2.0/ipp/lib/intel64:/usr/local/easybuild/software/icc/2017.u2-GCC-6.2.0/lib:/usr/local/easybuild/software/GCC/6.2.0/lib/gcc/x86_64-pc-linux-gnu/6.2.0:/usr/local/easybuild/software/GCC/6.2.0/lib64:/usr/local/easybuild/software/GCC/6.2.0/lib:/usr/local/easybuild/software/matplotlib/1.5.1-intel-2016.u3-Python-2.7.9/lib:/usr/local/easybuild/software/libpng/1.6.24-intel-2016.u3/lib:/usr/local/easybuild/software/freetype/2.6.5-intel-2016.u3/lib:/usr/local/easybuild/software/FFTW/3.3.4-intel-2016.u3/lib:/usr/local/easybuild/software/binutils/2.25/lib:/usr/local/slurm/latest/lib:/tmp/.mount_GVim-vKAGIPN/usr/lib:/tmp/.mount_GVim-vKAGIPN/usr/lib/i386-linux-gnu:/tmp/.mount_GVim-vKAGIPN/usr/lib/x86_64-linux-gnu:/tmp/.mount_GVim-vKAGIPN/usr/lib32:/tmp/.mount_GVim-vKAGIPN/usr/lib64:/tmp/.mount_GVim-vKAGIPN/lib:/tmp/.mount_GVim-vKAGIPN/lib/i386-linux-gnu:/tmp/.mount_GVim-vKAGIPN/lib/x86_64-linux-gnu:/tmp/.mount_GVim-vKAGIPN/lib32:/tmp/.mount_GVim-vKAGIPN/lib64
+I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:165] hostname: spartan-bm087.hpc.unimelb.edu.au
+I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:189] libcuda reported version is: Not found: was unable to find libcuda.so DSO loaded into this program
+I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:193] kernel reported version is: Permission denied: could not open driver version path for reading: /proc/driver/nvidia/version
+I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1092] LD_LIBRARY_PATH: /usr/local/easybuild/software/cuDNN/7.0.3-intel-2017.u2-CUDA-8.0.44/lib64:/usr/local/easybuild/software/CUDA/8.0.44-intel-2017.u2/lib64:/usr/local/easybuild/software/Python/2.7.13-intel-2017.u2/lib:/usr/local/easybuild/software/libffi/3.2.1-intel-2017.u2/lib:/usr/local/easybuild/software/Tk/8.6.5-intel-2017.u2/lib:/usr/local/easybuild/software/Tcl/8.6.5-intel-2017.u2/lib:/usr/local/easybuild/software/zlib/1.2.8-intel-2017.u2/lib:/usr/local/easybuild/software/SQLite/3.13.0-intel-2017.u2/lib:/usr/local/easybuild/software/libreadline/6.3-intel-2017.u2/lib:/usr/local/easybuild/software/ncurses/6.0-intel-2017.u2/lib:/usr/local/easybuild/software/bzip2/1.0.6-intel-2017.u2/lib:/usr/local/easybuild/software/imkl/2017.2.174-iimpi-2017.u2-GCC-6.2.0/mkl/lib/intel64:/usr/local/easybuild/software/imkl/2017.2.174-iimpi-2017.u2-GCC-6.2.0/lib/intel64:/usr/local/easybuild/software/impi/2017.2.174-iccifort-2017.u2-GCC-6.2.0/lib64:/usr/local/easybuild/software/ifort/2017.u2-GCC-6.2.0/lib/intel64:/usr/local/easybuild/software/ifort/2017.u2-GCC-6.2.0/daal/lib/intel64_lin:/usr/local/easybuild/software/ifort/2017.u2-GCC-6.2.0/debugger_2017/libipt/intel64/lib:/usr/local/easybuild/software/ifort/2017.u2-GCC-6.2.0/tbb/lib/intel64/gcc4.4:/usr/local/easybuild/software/ifort/2017.u2-GCC-6.2.0/mkl/lib/intel64:/usr/local/easybuild/software/ifort/2017.u2-GCC-6.2.0/ipp/lib/intel64:/usr/local/easybuild/software/ifort/2017.u2-GCC-6.2.0/lib:/usr/local/easybuild/software/icc/2017.u2-GCC-6.2.0/lib/intel64:/usr/local/easybuild/software/icc/2017.u2-GCC-6.2.0/daal/lib/intel64_lin:/usr/local/easybuild/software/icc/2017.u2-GCC-6.2.0/debugger_2017/libipt/intel64/lib:/usr/local/easybuild/software/icc/2017.u2-GCC-6.2.0/tbb/lib/intel64/gcc4.4:/usr/local/easybuild/software/icc/2017.u2-GCC-6.2.0/mkl/lib/intel64:/usr/local/easybuild/software/icc/2017.u2-GCC-6.2.0/ipp/lib/intel64:/usr/local/easybuild/software/icc/2017.u2-GCC-6.2.0/lib:/usr/local/easybuild/software/GCC/6.2.0/lib/gcc/x86_64-pc-linux-gnu/6.2.0:/usr/local/easybuild/software/GCC/6.2.0/lib64:/usr/local/easybuild/software/GCC/6.2.0/lib:/usr/local/easybuild/software/matplotlib/1.5.1-intel-2016.u3-Python-2.7.9/lib:/usr/local/easybuild/software/libpng/1.6.24-intel-2016.u3/lib:/usr/local/easybuild/software/freetype/2.6.5-intel-2016.u3/lib:/usr/local/easybuild/software/FFTW/3.3.4-intel-2016.u3/lib:/usr/local/easybuild/software/binutils/2.25/lib:/usr/local/slurm/latest/lib:/tmp/.mount_GVim-vKAGIPN/usr/lib:/tmp/.mount_GVim-vKAGIPN/usr/lib/i386-linux-gnu:/tmp/.mount_GVim-vKAGIPN/usr/lib/x86_64-linux-gnu:/tmp/.mount_GVim-vKAGIPN/usr/lib32:/tmp/.mount_GVim-vKAGIPN/usr/lib64:/tmp/.mount_GVim-vKAGIPN/lib:/tmp/.mount_GVim-vKAGIPN/lib/i386-linux-gnu:/tmp/.mount_GVim-vKAGIPN/lib/x86_64-linux-gnu:/tmp/.mount_GVim-vKAGIPN/lib32:/tmp/.mount_GVim-vKAGIPN/lib64
+I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1093] failed to find libcuda.so on this system: Failed precondition: could not dlopen DSO: libcuda.so.1; dlerror: libcuda.so.1: cannot open shared object file: No such file or directory
+I tensorflow/stream_executor/dso_loader.cc:128] successfully opened CUDA library libcurand.so locally
+E tensorflow/stream_executor/cuda/cuda_driver.cc:509] failed call to cuInit: CUDA_ERROR_NO_DEVICE
+I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:145] kernel driver does not appear to be running on this host (spartan-bm087.hpc.unimelb.edu.au): /proc/driver/nvidia/version does not exist
+Traceback (most recent call last):
+  File "run.py", line 68, in get_aucs
+    r = runner.erun()
+  File "/data/gpfs/projects/punim1343/repo/GCN_AnomalyDetection/gae/anomaly_detection.py", line 69, in erun
+    auc = roc_auc_score(y_true, reconstruction_errors)
+  File "/usr/local/easybuild/software/scikit-learn/0.18-intel-2016.u3-Python-2.7.9/lib/python2.7/site-packages/sklearn/metrics/ranking.py", line 260, in roc_auc_score
+    sample_weight=sample_weight)
+  File "/usr/local/easybuild/software/scikit-learn/0.18-intel-2016.u3-Python-2.7.9/lib/python2.7/site-packages/sklearn/metrics/base.py", line 84, in _average_binary_score
+    return binary_metric(y_true, y_score, sample_weight=sample_weight)
+  File "/usr/local/easybuild/software/scikit-learn/0.18-intel-2016.u3-Python-2.7.9/lib/python2.7/site-packages/sklearn/metrics/ranking.py", line 255, in _binary_roc_auc_score
+    sample_weight=sample_weight)
+  File "/usr/local/easybuild/software/scikit-learn/0.18-intel-2016.u3-Python-2.7.9/lib/python2.7/site-packages/sklearn/metrics/ranking.py", line 505, in roc_curve
+    y_true, y_score, pos_label=pos_label, sample_weight=sample_weight)
+  File "/usr/local/easybuild/software/scikit-learn/0.18-intel-2016.u3-Python-2.7.9/lib/python2.7/site-packages/sklearn/metrics/ranking.py", line 301, in _binary_clf_curve
+    assert_all_finite(y_score)
+  File "/usr/local/easybuild/software/scikit-learn/0.18-intel-2016.u3-Python-2.7.9/lib/python2.7/site-packages/sklearn/utils/validation.py", line 65, in assert_all_finite
+    _assert_all_finite(X.data if sp.issparse(X) else X)
+  File "/usr/local/easybuild/software/scikit-learn/0.18-intel-2016.u3-Python-2.7.9/lib/python2.7/site-packages/sklearn/utils/validation.py", line 58, in _assert_all_finite
+    " or a value too large for %r." % X.dtype)
+ValueError: Input contains NaN, infinity or a value too large for dtype('float32').
+Traceback (most recent call last):
+  File "run.py", line 68, in get_aucs
+    r = runner.erun()
+  File "/data/gpfs/projects/punim1343/repo/GCN_AnomalyDetection/gae/anomaly_detection.py", line 69, in erun
+    auc = roc_auc_score(y_true, reconstruction_errors)
+  File "/usr/local/easybuild/software/scikit-learn/0.18-intel-2016.u3-Python-2.7.9/lib/python2.7/site-packages/sklearn/metrics/ranking.py", line 260, in roc_auc_score
+    sample_weight=sample_weight)
+  File "/usr/local/easybuild/software/scikit-learn/0.18-intel-2016.u3-Python-2.7.9/lib/python2.7/site-packages/sklearn/metrics/base.py", line 84, in _average_binary_score
+    return binary_metric(y_true, y_score, sample_weight=sample_weight)
+  File "/usr/local/easybuild/software/scikit-learn/0.18-intel-2016.u3-Python-2.7.9/lib/python2.7/site-packages/sklearn/metrics/ranking.py", line 255, in _binary_roc_auc_score
+    sample_weight=sample_weight)
+  File "/usr/local/easybuild/software/scikit-learn/0.18-intel-2016.u3-Python-2.7.9/lib/python2.7/site-packages/sklearn/metrics/ranking.py", line 505, in roc_curve
+    y_true, y_score, pos_label=pos_label, sample_weight=sample_weight)
+  File "/usr/local/easybuild/software/scikit-learn/0.18-intel-2016.u3-Python-2.7.9/lib/python2.7/site-packages/sklearn/metrics/ranking.py", line 301, in _binary_clf_curve
+    assert_all_finite(y_score)
+  File "/usr/local/easybuild/software/scikit-learn/0.18-intel-2016.u3-Python-2.7.9/lib/python2.7/site-packages/sklearn/utils/validation.py", line 65, in assert_all_finite
+    _assert_all_finite(X.data if sp.issparse(X) else X)
+  File "/usr/local/easybuild/software/scikit-learn/0.18-intel-2016.u3-Python-2.7.9/lib/python2.7/site-packages/sklearn/utils/validation.py", line 58, in _assert_all_finite
+    " or a value too large for %r." % X.dtype)
+ValueError: Input contains NaN, infinity or a value too large for dtype('float32').
+Traceback (most recent call last):
+  File "run.py", line 68, in get_aucs
+    r = runner.erun()
+  File "/data/gpfs/projects/punim1343/repo/GCN_AnomalyDetection/gae/anomaly_detection.py", line 69, in erun
+    auc = roc_auc_score(y_true, reconstruction_errors)
+  File "/usr/local/easybuild/software/scikit-learn/0.18-intel-2016.u3-Python-2.7.9/lib/python2.7/site-packages/sklearn/metrics/ranking.py", line 260, in roc_auc_score
+    sample_weight=sample_weight)
+  File "/usr/local/easybuild/software/scikit-learn/0.18-intel-2016.u3-Python-2.7.9/lib/python2.7/site-packages/sklearn/metrics/base.py", line 84, in _average_binary_score
+    return binary_metric(y_true, y_score, sample_weight=sample_weight)
+  File "/usr/local/easybuild/software/scikit-learn/0.18-intel-2016.u3-Python-2.7.9/lib/python2.7/site-packages/sklearn/metrics/ranking.py", line 255, in _binary_roc_auc_score
+    sample_weight=sample_weight)
+  File "/usr/local/easybuild/software/scikit-learn/0.18-intel-2016.u3-Python-2.7.9/lib/python2.7/site-packages/sklearn/metrics/ranking.py", line 505, in roc_curve
+    y_true, y_score, pos_label=pos_label, sample_weight=sample_weight)
+  File "/usr/local/easybuild/software/scikit-learn/0.18-intel-2016.u3-Python-2.7.9/lib/python2.7/site-packages/sklearn/metrics/ranking.py", line 301, in _binary_clf_curve
+    assert_all_finite(y_score)
+  File "/usr/local/easybuild/software/scikit-learn/0.18-intel-2016.u3-Python-2.7.9/lib/python2.7/site-packages/sklearn/utils/validation.py", line 65, in assert_all_finite
+    _assert_all_finite(X.data if sp.issparse(X) else X)
+  File "/usr/local/easybuild/software/scikit-learn/0.18-intel-2016.u3-Python-2.7.9/lib/python2.7/site-packages/sklearn/utils/validation.py", line 58, in _assert_all_finite
+    " or a value too large for %r." % X.dtype)
+ValueError: Input contains NaN, infinity or a value too large for dtype('float32').
