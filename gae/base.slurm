@@ -6,10 +6,11 @@
 ##SBATCH --partition=gpgpu
 ##SBATCH --gres=gpu:1
 
-# CPU-only (note: constrain to faster Intel(R) Xeon(R) Gold 6254 CPU @ 3.10GHz)
+# CPU-only
 #SBATCH --qos=normal
 #SBATCH --partition=physical
-#SBATCH --constraint=physg5
+## NOTE: constrain to faster Intel(R) Xeon(R) Gold 6254 CPU @ 3.10GHz
+##SBATCH --constraint=physg5
 
 #SBATCH --mem=110G
 
@@ -17,7 +18,7 @@
 #SBATCH --nodes=1
 
 # The name of the job:
-#SBATCH --job-name="Autoencoder"
+#SBATCH --job-name="AE-Flickr"
 
 # The project ID which this job should run under:
 #SBATCH --account="punim1343"
