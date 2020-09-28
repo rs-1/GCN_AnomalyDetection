@@ -39,9 +39,10 @@ flags.DEFINE_integer('iterations', 100, 'number of iterations.')
 model = 'gcn_ae'  # 'arga_ae' or 'arga_vae'
 task = 'anomaly_detection'
 data_list = [
-        'acm_test_final',
-        'BlogCatalog',
-        'Flickr1',
+        sys.argv[1],
+        # 'acm_test_final',
+        # 'BlogCatalog',
+        # 'Flickr1',
         ]
 alphas = [i/10.0 for i in range(0,10+1)]
 NUM_TO_AVG = 1
