@@ -25,7 +25,7 @@ flags.DEFINE_float('weight_decay', 0., 'Weight for L2 loss on embedding matrix.'
 flags.DEFINE_float('dropout', 0., 'Dropout rate (1 - keep probability).')
 flags.DEFINE_integer('features', 1, 'Whether to use features (1) or not (0).')
 # flags.DEFINE_integer('seed', 50, 'seed for fixing the results.')
-flags.DEFINE_integer('iterations', 100, 'number of iterations.')
+flags.DEFINE_integer('iterations', 300, 'number of iterations.')
 
 
 # '''
@@ -39,9 +39,10 @@ flags.DEFINE_integer('iterations', 100, 'number of iterations.')
 model = 'gcn_ae'  # 'arga_ae' or 'arga_vae'
 task = 'anomaly_detection'
 data_list = [
-        'acm_test_final',
-        'BlogCatalog',
-        'Flickr1',
+        sys.argv[1],
+        # 'acm_test_final',
+        # 'BlogCatalog',
+        # 'Flickr1',
         ]
 alphas = [i/10.0 for i in range(0,10+1)]
 NUM_TO_AVG = 1

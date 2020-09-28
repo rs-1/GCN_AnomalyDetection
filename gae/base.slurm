@@ -18,7 +18,7 @@
 #SBATCH --nodes=1
 
 # The name of the job:
-#SBATCH --job-name="AE-Flickr"
+#SBATCH --job-name="AE-300-Flickr1"
 
 # The project ID which this job should run under:
 #SBATCH --account="punim1343"
@@ -47,4 +47,4 @@ module load scikit-learn/0.18-intel-2016.u3-Python-2.7.9
 module load Tensorflow/0.12.1-intel-2017.u2-Python-2.7.13-GPU
 
 # The job command(s):
-python2 run.py
+python2 run.py Flickr1
