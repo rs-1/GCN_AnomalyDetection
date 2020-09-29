@@ -44,7 +44,7 @@ fi
 # The modules to load:
 source /usr/local/module/spartan_old.sh
 module load scikit-learn/0.18-intel-2016.u3-Python-2.7.9
-module load Tensorflow/0.12.1-intel-2017.u2-Python-2.7.13-GPU
+module load Tensorflow/1.11.0-intel-2017.u2-Python-2.7.13-GPU
 
 # The job command(s):
 python2 run.py Flickr1
