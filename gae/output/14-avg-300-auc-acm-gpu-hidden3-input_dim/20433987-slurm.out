@@ -1,0 +1,80 @@
+
+The following have been reloaded with a version change:
+  1) GCC/4.9.2 => GCC/6.2.0
+  2) Python/2.7.9-intel-2016.u3 => Python/2.7.13-intel-2017.u2
+  3) SQLite/3.8.11.1-intel-2016.u3 => SQLite/3.13.0-intel-2017.u2
+  4) Tcl/8.6.5-intel-2016.u3 => Tcl/8.6.5-intel-2017.u2
+  5) Tk/8.6.5-intel-2016.u3 => Tk/8.6.5-intel-2017.u2
+  6) bzip2/1.0.6-intel-2016.u3 => bzip2/1.0.6-intel-2017.u2
+  7) icc/2016.u3-GCC-4.9.2 => icc/2017.u2-GCC-6.2.0
+  8) iccifort/2016.u3-GCC-4.9.2 => iccifort/2017.u2-GCC-6.2.0
+  9) ifort/2016.u3-GCC-4.9.2 => ifort/2017.u2-GCC-6.2.0
+ 10) iimpi/2016.u3-GCC-4.9.2 => iimpi/2017.u2-GCC-6.2.0
+ 11) imkl/11.3.3.210-iimpi-2016.u3-GCC-4.9.2 => imkl/2017.2.174-iimpi-2017.u2-GCC-6.2.0
+ 12) impi/5.1.3.223-iccifort-2016.u3-GCC-4.9.2 => impi/2017.2.174-iccifort-2017.u2-GCC-6.2.0
+ 13) intel/2016.u3 => intel/2017.u2
+ 14) libffi/3.2.1-intel-2016.u3 => libffi/3.2.1-intel-2017.u2
+ 15) libreadline/6.3-intel-2016.u3 => libreadline/6.3-intel-2017.u2
+ 16) ncurses/5.9-intel-2016.u3 => ncurses/6.0-intel-2017.u2
+ 17) zlib/1.2.8-intel-2016.u3 => zlib/1.2.8-intel-2017.u2
+
+2020-10-02 20:40:50.266708: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2020-10-02 20:40:50.395560: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1411] Found device 0 with properties: 
+name: Tesla P100-PCIE-12GB major: 6 minor: 0 memoryClockRate(GHz): 1.3285
+pciBusID: 0000:03:00.0
+totalMemory: 11.91GiB freeMemory: 11.66GiB
+2020-10-02 20:40:50.395657: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1490] Adding visible gpu devices: 0
+2020-10-02 20:40:54.123121: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-10-02 20:40:54.123220: I tensorflow/core/common_runtime/gpu/gpu_device.cc:977]      0 
+2020-10-02 20:40:54.123235: I tensorflow/core/common_runtime/gpu/gpu_device.cc:990] 0:   N 
+2020-10-02 20:40:54.123369: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1103] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 11283 MB memory) -> physical GPU (device: 0, name: Tesla P100-PCIE-12GB, pci bus id: 0000:03:00.0, compute capability: 6.0)
+2020-10-02 20:42:47.003882: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1490] Adding visible gpu devices: 0
+2020-10-02 20:42:47.003998: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-10-02 20:42:47.004017: I tensorflow/core/common_runtime/gpu/gpu_device.cc:977]      0 
+2020-10-02 20:42:47.004029: I tensorflow/core/common_runtime/gpu/gpu_device.cc:990] 0:   N 
+2020-10-02 20:42:47.004111: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1103] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 11283 MB memory) -> physical GPU (device: 0, name: Tesla P100-PCIE-12GB, pci bus id: 0000:03:00.0, compute capability: 6.0)
+2020-10-02 20:44:37.455808: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1490] Adding visible gpu devices: 0
+2020-10-02 20:44:37.455912: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-10-02 20:44:37.455931: I tensorflow/core/common_runtime/gpu/gpu_device.cc:977]      0 
+2020-10-02 20:44:37.455943: I tensorflow/core/common_runtime/gpu/gpu_device.cc:990] 0:   N 
+2020-10-02 20:44:37.456034: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1103] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 11283 MB memory) -> physical GPU (device: 0, name: Tesla P100-PCIE-12GB, pci bus id: 0000:03:00.0, compute capability: 6.0)
+2020-10-02 20:46:28.667828: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1490] Adding visible gpu devices: 0
+2020-10-02 20:46:28.667944: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-10-02 20:46:28.671216: I tensorflow/core/common_runtime/gpu/gpu_device.cc:977]      0 
+2020-10-02 20:46:28.671234: I tensorflow/core/common_runtime/gpu/gpu_device.cc:990] 0:   N 
+2020-10-02 20:46:28.671334: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1103] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 11283 MB memory) -> physical GPU (device: 0, name: Tesla P100-PCIE-12GB, pci bus id: 0000:03:00.0, compute capability: 6.0)
+2020-10-02 20:48:19.759733: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1490] Adding visible gpu devices: 0
+2020-10-02 20:48:19.759848: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-10-02 20:48:19.759866: I tensorflow/core/common_runtime/gpu/gpu_device.cc:977]      0 
+2020-10-02 20:48:19.759878: I tensorflow/core/common_runtime/gpu/gpu_device.cc:990] 0:   N 
+2020-10-02 20:48:19.759978: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1103] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 11283 MB memory) -> physical GPU (device: 0, name: Tesla P100-PCIE-12GB, pci bus id: 0000:03:00.0, compute capability: 6.0)
+2020-10-02 20:50:11.653307: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1490] Adding visible gpu devices: 0
+2020-10-02 20:50:11.653421: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-10-02 20:50:11.653439: I tensorflow/core/common_runtime/gpu/gpu_device.cc:977]      0 
+2020-10-02 20:50:11.653451: I tensorflow/core/common_runtime/gpu/gpu_device.cc:990] 0:   N 
+2020-10-02 20:50:11.653549: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1103] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 11283 MB memory) -> physical GPU (device: 0, name: Tesla P100-PCIE-12GB, pci bus id: 0000:03:00.0, compute capability: 6.0)
+2020-10-02 20:52:03.767686: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1490] Adding visible gpu devices: 0
+2020-10-02 20:52:03.767796: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-10-02 20:52:03.767815: I tensorflow/core/common_runtime/gpu/gpu_device.cc:977]      0 
+2020-10-02 20:52:03.767826: I tensorflow/core/common_runtime/gpu/gpu_device.cc:990] 0:   N 
+2020-10-02 20:52:03.767921: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1103] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 11283 MB memory) -> physical GPU (device: 0, name: Tesla P100-PCIE-12GB, pci bus id: 0000:03:00.0, compute capability: 6.0)
+2020-10-02 20:53:53.239667: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1490] Adding visible gpu devices: 0
+2020-10-02 20:53:53.239786: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-10-02 20:53:53.239804: I tensorflow/core/common_runtime/gpu/gpu_device.cc:977]      0 
+2020-10-02 20:53:53.239816: I tensorflow/core/common_runtime/gpu/gpu_device.cc:990] 0:   N 
+2020-10-02 20:53:53.239907: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1103] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 11283 MB memory) -> physical GPU (device: 0, name: Tesla P100-PCIE-12GB, pci bus id: 0000:03:00.0, compute capability: 6.0)
+2020-10-02 20:55:42.574111: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1490] Adding visible gpu devices: 0
+2020-10-02 20:55:42.574226: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-10-02 20:55:42.574245: I tensorflow/core/common_runtime/gpu/gpu_device.cc:977]      0 
+2020-10-02 20:55:42.574256: I tensorflow/core/common_runtime/gpu/gpu_device.cc:990] 0:   N 
+2020-10-02 20:55:42.574349: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1103] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 11283 MB memory) -> physical GPU (device: 0, name: Tesla P100-PCIE-12GB, pci bus id: 0000:03:00.0, compute capability: 6.0)
+2020-10-02 20:57:33.159979: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1490] Adding visible gpu devices: 0
+2020-10-02 20:57:33.160085: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-10-02 20:57:33.160103: I tensorflow/core/common_runtime/gpu/gpu_device.cc:977]      0 
+2020-10-02 20:57:33.160114: I tensorflow/core/common_runtime/gpu/gpu_device.cc:990] 0:   N 
+2020-10-02 20:57:33.160190: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1103] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 11283 MB memory) -> physical GPU (device: 0, name: Tesla P100-PCIE-12GB, pci bus id: 0000:03:00.0, compute capability: 6.0)
+2020-10-02 20:59:24.619074: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1490] Adding visible gpu devices: 0
+2020-10-02 20:59:24.619182: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-10-02 20:59:24.619199: I tensorflow/core/common_runtime/gpu/gpu_device.cc:977]      0 
+2020-10-02 20:59:24.619211: I tensorflow/core/common_runtime/gpu/gpu_device.cc:990] 0:   N 
+2020-10-02 20:59:24.619304: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1103] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 11283 MB memory) -> physical GPU (device: 0, name: Tesla P100-PCIE-12GB, pci bus id: 0000:03:00.0, compute capability: 6.0)
