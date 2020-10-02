@@ -52,6 +52,9 @@ class GCNModelAE(Model):
         self.build()
 
     def _build(self):
+
+        # ---------------- encoder
+
         self.hidden1 = GraphConvolutionSparse(input_dim=self.input_dim,
                                               output_dim=FLAGS.hidden1,
                                               adj=self.adj,
@@ -60,44 +63,43 @@ class GCNModelAE(Model):
                                               dropout=self.dropout,
                                               logging=self.logging)(self.inputs)
 
-        self.embeddings = GraphConvolution(input_dim=FLAGS.hidden1,
-                                           output_dim=FLAGS.hidden2,
+        self.hidden2 = GraphConvolution(input_dim=FLAGS.hidden1,
+                                              output_dim=FLAGS.hidden2,
+                                              adj=self.adj,
+                                              act=tf.nn.relu,
+                                              dropout=self.dropout,
+                                              logging=self.logging)(self.hidden1)
+
+        self.hidden3 = GraphConvolution(input_dim=FLAGS.hidden2,
+                                           output_dim=FLAGS.hidden3,
                                            adj=self.adj,
                                            act=tf.nn.relu,
                                            dropout=self.dropout,
-                                           logging=self.logging)(self.hidden1)
-        # self.z_mean = self.embeddings
+                                           logging=self.logging)(self.hidden2)
 
-        # decoder1
-        self.attribute_decoder_layer1 = GraphConvolution(input_dim=FLAGS.hidden2,
-                                           output_dim=FLAGS.hidden1,
-                                           adj=self.adj,
-                                           act=tf.nn.relu,
-                                           dropout=self.dropout,
-                                           logging=self.logging)(self.embeddings)
+        self.embeddings = self.hidden3
 
-        self.attribute_decoder_layer2 = GraphConvolution(input_dim=FLAGS.hidden1,
-                                               output_dim=self.input_dim,
-                                               adj=self.adj,
-                                               act=tf.nn.relu,
-                                               dropout=self.dropout,
-                                               logging=self.logging)(self.attribute_decoder_layer1)
+        # ---------------- decoder1 - Attributes (X)
 
-        # decoder2
-        self.structure_decoder_layer1 = GraphConvolution(input_dim=FLAGS.hidden2,
-                                           output_dim=FLAGS.hidden1,
+        self.attribute_decoder_layer = GraphConvolution(input_dim=FLAGS.hidden3,
+                                           output_dim=self.input_dim,
                                            adj=self.adj,
                                            act=tf.nn.relu,
                                            dropout=self.dropout,
                                            logging=self.logging)(self.embeddings)
 
-        self.structure_decoder_layer2 = InnerProductDecoder(input_dim=FLAGS.hidden1,
+        # TODO: try making decoder symmetrical (+2 layers to original)
+
+        # ---------------- decoder2 - Network (A)
+
+        self.structure_decoder_layer = InnerProductDecoder(input_dim=FLAGS.hidden3,
                                         act=tf.nn.sigmoid,
-                                        logging=self.logging)(self.structure_decoder_layer1)
+                                        logging=self.logging)(self.embeddings)
 
+        # ---------------- summary
 
-        self.attribute_reconstructions = self.attribute_decoder_layer2
-        self.structure_reconstructions = self.structure_decoder_layer2
+        self.attribute_reconstructions = self.attribute_decoder_layer
+        self.structure_reconstructions = self.structure_decoder_layer
 
 
 
