@@ -70,7 +70,8 @@ def wrapper(f):
         return ('gnd', 'X', 'A')
     elif f in ('Flickr1', 'Flickr2', 'Flickr3'):
         return ('Label', 'Attributes', 'Network')
-
+    elif 'node-capture' in f:
+        return ('Label', 'Attributes', 'Network')
 
 def load_data(data_source):
     data = scipy.io.loadmat("data/{}.mat".format(data_source))
