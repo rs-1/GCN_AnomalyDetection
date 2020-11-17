@@ -2,15 +2,15 @@
 # Created by the University of Melbourne job script generator for SLURM
 # Mon Sep 14 2020 16:39:51 GMT+1000 (Australian Eastern Standard Time)
 
-## Use GPU
-##SBATCH --partition=gpgpu
-##SBATCH --gres=gpu:1
+# Use GPU
+#SBATCH --partition=gpgpu
+#SBATCH --gres=gpu:1
 
-# CPU-only
-#SBATCH --qos=normal
-#SBATCH --partition=physical
-## NOTE: constrain to faster Intel(R) Xeon(R) Gold 6254 CPU @ 3.10GHz
-##SBATCH --constraint=physg5
+## CPU-only
+##SBATCH --qos=normal
+##SBATCH --partition=physical
+### NOTE: constrain to faster Intel(R) Xeon(R) Gold 6254 CPU @ 3.10GHz
+###SBATCH --constraint=physg5
 
 #SBATCH --mem=110G
 
@@ -18,7 +18,7 @@
 #SBATCH --nodes=1
 
 # The name of the job:
-#SBATCH --job-name="AE-300-Flickr1"
+#SBATCH --job-name="AE-300-_1DATASET_"
 
 # The project ID which this job should run under:
 #SBATCH --account="punim1343"
@@ -47,4 +47,4 @@ module load scikit-learn/0.18-intel-2016.u3-Python-2.7.9
 module load Tensorflow/1.11.0-intel-2017.u2-Python-2.7.13-GPU
 
 # The job command(s):
-python2 run.py Flickr1
+python2 run.py _1DATASET_
